@@ -1,0 +1,16 @@
+@charset 'UTF-8';
+.footer_nav {
+  display: flex;
+  align-items: flex-end;
+}
+.footer_nav h1 {
+  width: -webkit-fill-available;
+  border: 1px solid rgb(146, 144, 144);
+}
+li {
+  list-style: none;
+}
+.footer {
+  display: flex;
+  justify-content: space-around;
+}
