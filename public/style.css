@@ -1,4 +1,15 @@
 @charset 'UTF-8';
+html {
+  scroll-behavior: smooth;
+  background-color: rgb(163, 116, 82);
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: rgb(70, 2, 2);
+}
 .footer_nav {
   display: flex;
   align-items: flex-end;
