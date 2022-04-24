@@ -4,6 +4,7 @@
     <form v-on:submit.prevent="addSearch">
       <input type="text" v-model="inputText">{{ $store.state.foodDatas }}
     </form>
+    <img src="../assets/brain2.svg" alt="脳">
     <FooterComp></FooterComp>
   </div>
 </template>
