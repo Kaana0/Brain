@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <h1>あなたの脳は今...</h1>
-    <h1>85%</h1>
+    <h1>95%</h1>
     <FooterComp></FooterComp>
   </div>
 </template>
