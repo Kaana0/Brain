@@ -3,3 +3,9 @@
     <li @click="toggleActive"><router-link to="/about">使い方</router-link></li>
   </div>
 </template>
+
+<style scoped>
+li {
+  float: right;
+}
+</style>

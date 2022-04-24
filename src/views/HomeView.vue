@@ -1,7 +1,8 @@
 <template>
   <div class="home">
-    <h1>Great <br> Brain !!</h1>
     <HeaderComp></HeaderComp>
+    <h1>Great <br> Brain !!</h1>
+    <img src="../assets/brain1.svg" alt="">
   </div>
 </template>
 
@@ -14,3 +15,6 @@ export default {
   }
 }
 </script>
+<style scoped>
+
+</style>
