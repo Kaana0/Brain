@@ -1,11 +1,11 @@
 [
-  {
-      "name": "なす",
-      "photo": "nasu.svg",
-      "kouka": "おいしい",
-      "seibun": "あたまにいい"
-  },
-  {
+{
+    "name": "なす",
+    "photo": "nasu.svg",
+    "kouka": "おいしい",
+    "seibun": "あたまにいい"
+},
+{
     "name": "アスパラガス",
     "photo": "niku.png",
     "kouka": "おいしい",

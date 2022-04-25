@@ -1,12 +1,12 @@
 <template>
   <div id="app">
     <h1>Search</h1>
-    <p>{{ $route.params.foodId }}</p>
+    <!-- <p>{{ $route.params.foodId }}</p> -->
       <input type="text" v-model="inputText">
       <ul>
         <li v-for="(item, index) in foodSearch" :key="index">
-          <a :href="'/foods/' + item.id">{{ item.name }}</a>
-          <br><img class="food" :src="require('@/assets/'+item.photo)"><br>{{ item.kouka }}<br>{{ item.seibun }}
+          <router-link to="/nasucomp">{{ item.name }}
+          <br><img class="food" :src="require('@/assets/'+item.photo)"><br>{{ item.kouka }}<br>{{ item.seibun }}</router-link>
         </li>
       </ul>
     <img src="../assets/brain2.svg" alt="脳">

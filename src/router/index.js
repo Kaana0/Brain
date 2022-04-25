@@ -75,6 +75,11 @@ const routes = [
     name: 'vegetable',
     component: () => import('../views/VegeTable.vue')
   },
+  {
+    path: '/nasucomp',
+    name: 'nasucomp',
+    component: () => import('../components/NasuComp.vue')
+  },
 ]
 
 const router = new VueRouter({
