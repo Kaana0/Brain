@@ -18,3 +18,15 @@
 //   AboutView,
 // }
 </script>
+<style scoped>
+li {
+  border: solid 1px rgb(85, 50, 3);
+  width: 100%;
+  margin: 0;
+  height: 4em;
+}
+ul {
+  padding: 0;
+  background-color: mistyrose;
+}
+</style>

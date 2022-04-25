@@ -1,0 +1,32 @@
+[
+  {
+      "name": "なす",
+      "photo": "nasu.svg",
+      "kouka": "おいしい",
+      "seibun": "あたまにいい"
+  },
+  {
+    "name": "アスパラガス",
+    "photo": "niku.png",
+    "kouka": "おいしい",
+    "seibun": "あたまにいい"
+},
+{
+    "name": "パセリ",
+    "photo": "nasu.svg",
+    "kouka": "おいしい",
+    "seibun": "あたまにいい"
+},
+{
+    "name": "枝豆",
+    "photo": "nasu.svg",
+    "kouka": "おいしい",
+    "seibun": "あたまにいい"
+},
+{
+    "name": "えんどう豆",
+    "photo": "nasu.svg",
+    "kouka": "おいしい",
+    "seibun": "あたまにいい"
+}
+]
