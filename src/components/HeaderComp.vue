@@ -1,11 +1,11 @@
 <template>
   <div id="app">
-    <li @click="toggleActive"><router-link to="/about">使い方</router-link></li>
+    <router-link to="/about" class="li">使い方</router-link>
   </div>
 </template>
 
 <style scoped>
-li {
+.li {
   float: right;
 }
 </style>

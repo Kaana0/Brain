@@ -23,12 +23,6 @@ export default {
     return {
       fdData: fd,
       inputText: '',
-      // brainDatas: [
-      //   {
-      //     date: '2022-04-21',
-      //     cont: [ 1, 3 ]
-      //   }
-      // ],
     }
   },
   methods: {
