@@ -32,9 +32,13 @@ export default {
   },
   computed: {
     foodSearch() {
-      return this.fdData.filter((item) => {
-        return item.name.indexOf(this.inputText) != -1
-      })
+      if(this.inputText == '') {
+        return ''
+      } else {
+        return this.fdData.filter((item) => {
+          return item.name.indexOf(this.inputText) != -1
+        })
+      }
   },
   // findFoods() {
   //   return this.fdData.find((item) => {

@@ -2,31 +2,37 @@
 {
     "name": "なす",
     "photo": "nasu.svg",
-    "kouka": "おいしい",
+    "kouka": "頭に良い",
     "seibun": "あたまにいい"
 },
 {
     "name": "アスパラガス",
     "photo": "niku.png",
-    "kouka": "おいしい",
+    "kouka": "集中力UP",
     "seibun": "あたまにいい"
 },
 {
     "name": "パセリ",
     "photo": "nasu.svg",
-    "kouka": "おいしい",
+    "kouka": "頭に良い",
     "seibun": "あたまにいい"
 },
 {
     "name": "枝豆",
     "photo": "nasu.svg",
-    "kouka": "おいしい",
+    "kouka": "脳の活性化",
     "seibun": "あたまにいい"
 },
 {
     "name": "えんどう豆",
     "photo": "nasu.svg",
-    "kouka": "おいしい",
+    "kouka": "頭に良い",
+    "seibun": "あたまにいい"
+},
+{
+    "name": "メロン",
+    "photo": "melon.svg",
+    "kouka": "体に良い",
     "seibun": "あたまにいい"
 }
 ]

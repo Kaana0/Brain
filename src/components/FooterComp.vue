@@ -12,11 +12,6 @@
 </template>
 
 <script>
-// import AboutView from '../views/AboutView.vue'
-
-// export default {
-//   AboutView,
-// }
 </script>
 <style scoped>
 .li {
@@ -24,6 +19,7 @@
   width: 100%;
   margin: 0;
   height: 4em;
+  line-height: 4;
 }
 ul {
   padding: 0;
