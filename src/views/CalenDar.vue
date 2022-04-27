@@ -38,14 +38,14 @@ export default {
   methods: {
     onDayClick(day) {
       console.log(day.id)
-      // this.attributes.push(
-      //   {
-      //     highlight: {color:'blue', fillMode: 'solid',},
-      //     dates: [day.id],
-      //   popover: {
-      //     label: '寝る',
-      //   },
-      //   })
+      this.attributes.push(
+        {
+          highlight: {color:'blue', fillMode: 'solid',},
+          dates: [day.id],
+        popover: {
+          label: '寝る',
+        },
+        })
       this.$router.push()
     },
     formatDate(date) {
