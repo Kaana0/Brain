@@ -5,16 +5,16 @@ import axios from 'axios'
 Vue.use(Vuex)
 
 export default new Vuex.Store({
-  state: {
+state: {
     vegetable: '',
     atama:[
-      { name: "豚肉"},
-      { name: "オリゴ糖"},
-      { name: "秋刀魚"},
+    { name: "豚肉"},
+    { name: "オリゴ糖"},
+    { name: "秋刀魚"},
     ],
     kouka:[
-      { name: "なす"},
-      { name: 'アスパラガス'},
+    { name: "なす"},
+    { name: 'アスパラガス'},
     ],
     fd:[
     {
@@ -204,18 +204,18 @@ export default new Vuex.Store({
         seibun: "あたまにいい"
     },
     ]
-  },
-  mutations: {
+},
+mutations: {
     changeVegetable(state, { veginame }) {
-      state.vegetable = veginame
+    state.vegetable = veginame
     },
-  },
-  actions: {
+},
+actions: {
     fetchItems({ commit }) {
-      return axios.get('')
-      .then(response => {
+    return axios.get('')
+    .then(response => {
         commit('receiveItems', response.data)
-      })
+    })
     }
-  },
+},
 })
