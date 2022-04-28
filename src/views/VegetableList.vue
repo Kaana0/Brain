@@ -1,16 +1,41 @@
 <template>
   <div id="app">
-    <nav>
-      <li><router-link to="/vegetable">野菜</router-link></li>
-      <li><router-link to="/">果物</router-link></li>
-      <li><router-link to="/">きのこ</router-link></li>
-      <li><router-link to="/">海藻</router-link></li>
-      <li><router-link to="/">まめ</router-link></li>
-      <li><router-link to="/">いも</router-link></li>
-      <li><router-link to="/">さかな</router-link></li>
-      <li><router-link to="/">にく</router-link></li>
-      <li><router-link to="/">乳製品</router-link></li>
-      <li><router-link to="/">たね</router-link></li>
-    </nav>
+    {{ vegitableName }}効果のあるたべもの
+    <ul>
+      <li v-for="kouka in koukaList" :key="kouka" @click="getId(kouka)">
+        {{ kouka }}</li>
+    </ul>
   </div>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+    }
+  },
+  methods: {
+        getId(koukaid) {
+      this.$store.commit('changeVegetable', { veginame: koukaid})
+      this.$router.push('vegetablelist')
+      }
+  },
+  computed: {
+    vegitableName() { // クリックされた項目を取得
+      return this.$store.state.vegetable
+    },
+    vegitableList() { // 食べ物リストを取得
+      return this.$store.state.fd
+    },
+    filteredList() { // クリックされた項目が一致する食べ物
+      return this.vegitableList.filter((vegi) => {
+        return vegi.kouka === this.vegitableName
+      })
+    },
+        koukaList() {
+      const result = this.$store.state.fd.map((obj) => obj.kouka)
+      return new Set(result)
+    }
+  }
+}
+</script>
