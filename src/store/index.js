@@ -21,24 +21,28 @@ state: {
         name: "なす",
         photo: "nasu.svg",
         kouka: "頭に良い",
+        photo1: "denki.svg",
         seibun: "あたまにいい"
     },
     {
         name: "アボカド",
         photo: "avocado.svg",
         kouka: "集中力UP",
+        photo1: "hirameki.svg",
         seibun: "あたまにいい"
     },
     {
         name: "バナナ",
         photo: "banana.svg",
         kouka: "記憶力UP",
+        photo1: "atama1.svg",
         seibun: "あたまにいい"
     },
     {
         name: "豚肉",
         photo: "buta.svg",
         kouka: "記憶力UP",
+        photo1: "atama2.svg",
         seibun: "あたまにいい"
     },
     {
@@ -51,12 +55,14 @@ state: {
         name: "チーズ",
         photo: "cheese.svg",
         kouka: "季節別",
+        photo1: "sakura.svg",
         seibun: "あたまにいい"
     },
     {
         name: "きゅうり",
         photo: "cu-ri.svg",
         kouka: "食材別",
+        photo1: "kabu.svg",
         seibun: "あたまにいい"
     },
     {

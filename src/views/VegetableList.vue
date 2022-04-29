@@ -7,7 +7,6 @@
     </ul>
   </div>
 </template>
-
 <script>
 export default {
   data() {
@@ -15,7 +14,7 @@ export default {
     }
   },
   methods: {
-        getId(koukaid) {
+      getId(koukaid) {
       this.$store.commit('changeVegetable', { veginame: koukaid})
       this.$router.push('vegetablelist')
       }

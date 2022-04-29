@@ -10,34 +10,25 @@
       </ul>
     <img src="../assets/brain2.svg" alt="脳">
     <FooterComp></FooterComp>
-    <a href="" v-for="(foodItem, index) in foodItems" :key="index"></a>
   </div>
 </template>
 <script>
 import FooterComp from '@/components/FooterComp.vue';
-
 export default {
   data() {
     return {
       inputText: '',
     }
   },
-  methods: {
-  
-  },
   computed: {
     foodSearch() {
-      // if(this.inputText == '') {
-      //   return ''
-      // } else {
-      //   return this.fdData.filter((item) => {
-      //     return item.name.indexOf(this.inputText) != -1
-      //   })
-      // }
-              return this.$store.state.fd.filter((item) => {
-          return item.name.indexOf(this.inputText) != -1
+      if(this.inputText == '') {
+        return ''
+      } else {
+        return this.$store.state.fd.filter((item) => {
+        return item.name.indexOf(this.inputText) != -1
         })
-
+      }
     },
   },
   components: {
