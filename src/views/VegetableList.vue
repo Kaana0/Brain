@@ -1,10 +1,7 @@
 <template>
   <div id="app">
     {{ vegitableName }}効果のあるたべもの
-    <ul>
-      <li v-for="kouka in koukaList" :key="kouka" @click="getId(kouka)">
-        {{ kouka }}</li>
-    </ul>
+
   </div>
 </template>
 <script>

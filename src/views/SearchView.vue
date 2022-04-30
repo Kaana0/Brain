@@ -3,7 +3,7 @@
     <h1>Search</h1>
       <input type="text" v-model="inputText">
       <ul>
-        <li v-for="(item, index) in foodSearch" :key="index">
+        <li v-for="(item, index) in foodSearch" :key="index" @click="getId(kouka)">
           {{ item.name }}
           <br><img class="food" :src="require('@/assets/'+item.photo)"><br>{{ item.kouka }}<br>{{ item.seibun }}
         </li>
@@ -19,6 +19,12 @@ export default {
     return {
       inputText: '',
     }
+  },
+  methods: {
+    getId(koukaid) {
+  this.$store.commit('changeVegetable', { veginame: koukaid})
+  this.$router.push('vegetablelist')
+  }
   },
   computed: {
     foodSearch() {

@@ -80,6 +80,11 @@ const routes = [
     name: 'nasucomp',
     component: () => import('../components/NasuComp.vue')
   },
+  {
+    path: '/todaypage',
+    name: 'today',
+    component: () => import('../views/TodayPage.vue')
+  },
 ]
 
 const router = new VueRouter({
