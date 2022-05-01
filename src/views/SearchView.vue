@@ -3,7 +3,7 @@
     <h1>Search</h1>
       <input type="text" v-model="inputText">
       <ul>
-        <li v-for="(item, index) in foodSearch" :key="index" @click="getId(kouka)">
+        <li v-for="(item, index) in foodSearch" :key="index" @click="getId()">
           {{ item.name }}
           <br><img class="food" :src="require('@/assets/'+item.photo)"><br>{{ item.kouka }}<br>{{ item.seibun }}
         </li>

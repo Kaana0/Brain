@@ -7,6 +7,7 @@ Vue.use(Vuex)
 export default new Vuex.Store({
 state: {
     vegetable: '',
+    time: '',
     atama:[
     { name: "豚肉"},
     { name: "オリゴ糖"},

@@ -1,7 +1,8 @@
 <template>
   <div class="home">
     <HeaderComp></HeaderComp>
-    <h1>Great <br> Brain !!</h1>
+    <h1>Great</h1>
+    <h1>Brain !!</h1>
     <img src="../assets/brain1.svg" alt="">
   </div>
 </template>
@@ -16,5 +17,9 @@ export default {
 }
 </script>
 <style scoped>
-
+.home {
+  margin: 0 auto;
+  padding: 80px 4%;
+  width: 100%;
+}
 </style>

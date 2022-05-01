@@ -9,10 +9,17 @@ li {
 a {
   text-decoration: none;
   color: rgb(70, 2, 2);
+  display: block;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: top;
 }
 .footer_nav {
   display: flex;
   align-items: flex-end;
+  bottom: 0;
 }
 .footer_nav h1 {
   width: -webkit-fill-available;
@@ -22,6 +29,11 @@ li {
   list-style: none;
 }
 .footer {
+  width: 100%;
   display: flex;
   justify-content: space-around;
+  position: absolute;
+  bottom: 0;
+  padding: 0%;
 }
+

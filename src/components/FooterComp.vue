@@ -25,4 +25,7 @@ ul {
   padding: 0;
   background-color: mistyrose;
 }
+main {
+  min-height: 100vh;
+}
 </style>

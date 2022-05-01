@@ -6,6 +6,8 @@
 
 <style scoped>
 .li {
-  float: right;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 7%;
 }
 </style>

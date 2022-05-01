@@ -1,75 +1,64 @@
 <template>
   <div id="app">
-    {{ vegitableName }}のページ
-      <div 
-                class="full-image-wrap"
-                v-if="fullImage"
-            >
-                <img 
-                    class="full-image"
-                    :src="currentImageUrl.src"
-                > 
-            </div>
-          <!-- <img 
-                        class="img"
-                        :src="image.src"
-                        @click="imageClick(index)" 
-                    > -->
+    {{ todayDate }}のページ
     <ul>
-      <li v-for="(task, index) in doneTaskList" :key="index" @click="imageClick(index)">
-        {{ task.name }}
-      </li>
+      <li @click="imageClick">野菜</li>
+      <li @click="imageClick">果物</li>
+      <li @click="imageClick">きのこ</li>
+      <li @click="imageClick">海藻</li>
+      <li @click="imageClick">豆</li>
+      <li @click="imageClick">芋</li>
+      <li @click="imageClick">魚</li>
+      <li @click="imageClick">肉</li>
+      <li @click="imageClick">乳製品</li>
+      <li @click="imageClick">種</li>
     </ul>
+    <p><img src="../assets/ok.svg" alt=""></p>
+    <!-- <transition name="slide" mode="out-in" appear>
+    <OkComp v-if="imageClick === 'OkComp' "></OkComp>
+    <OkComp v-else></OkComp>
+    </transition> -->
+    <FooterComp></FooterComp>
   </div>
 </template>
 <script>
+// import OkComp from '@/components/OkComp.vue';
+import FooterComp from '@/components/FooterComp.vue';
 export default {
   data() {
     return {
-      inputText: '',
-      tasks: [
-        { name: 'たらこパスタ', done: false},
-        { name: 'ラーメン食べる', done: false},
-      ],
-      image: { src: "../assets/ok.svg"},
-      fullImage: false,
-      currentImageIndex: -1,
+      imageClick: '',
+      todayDate: '',
+      image: { src: "require('@/assets/ok.svg')", done: false},
     }
   },
   methods: {
-    imageClick(index) {
-      this.currentImageIndex = index;
-      this.fullImage = true;
-    },
-    getId(koukaid) {
-      this.$store.commit('changeVegetable', { veginame: koukaid})
-      this.$router.push('vegetablelist')
-    }
   },
   computed: {
-    currentImageUrl(){
-      return this.image[this.currentImageIndex]
-    },
-    doneTaskList() {
-      return this.tasks.filter((item) => {
-        return item.done === false
-      })
-    },
-        vegitableName() { // クリックされた項目を取得
-      return this.$store.state.vegetable
-    },
-    vegitableList() { // 食べ物リストを取得
-      return this.$store.state.fd
-    },
-    filteredList() { // クリックされた項目が一致する食べ物
-      return this.vegitableList.filter((vegi) => {
-        return vegi.kouka === this.vegitableName
-      })
-    },
-        koukaList() {
-      const result = this.$store.state.fd.map((obj) => obj.kouka)
-      return new Set(result)
-    }
+    // image() {
+    //   return require('@/assets/ok.svg')
+    // }
+  },
+  components: {
+    FooterComp,
+    // OkComp,
   }
 }
 </script>
+<style scoped>
+ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 60px;
+  margin: auto;
+  padding: 0 20px;
+}
+li {
+  background-color: antiquewhite;
+  border: 1px solid rgb(73, 15, 15);
+  width: 6em;
+  height: 3em;
+  line-height: 3;
+}
+</style>
