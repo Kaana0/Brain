@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    {{ todayDate }}のページ
+    <h1>{{ todayDate }}のページ</h1>
     <ul>
       <li @click="imageClick">野菜</li>
       <li @click="imageClick">果物</li>
@@ -14,15 +14,10 @@
       <li @click="imageClick">種</li>
     </ul>
     <p><img src="../assets/ok.svg" alt=""></p>
-    <!-- <transition name="slide" mode="out-in" appear>
-    <OkComp v-if="imageClick === 'OkComp' "></OkComp>
-    <OkComp v-else></OkComp>
-    </transition> -->
     <FooterComp></FooterComp>
   </div>
 </template>
 <script>
-// import OkComp from '@/components/OkComp.vue';
 import FooterComp from '@/components/FooterComp.vue';
 export default {
   data() {
@@ -41,7 +36,6 @@ export default {
   },
   components: {
     FooterComp,
-    // OkComp,
   }
 }
 </script>
@@ -50,7 +44,7 @@ ul {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 60px;
+  gap: 40px;
   margin: auto;
   padding: 0 20px;
 }
@@ -60,5 +54,11 @@ li {
   width: 6em;
   height: 3em;
   line-height: 3;
+}
+#app {
+  margin-top: 15%;
+}
+h1 {
+  padding-bottom: 10%;
 }
 </style>

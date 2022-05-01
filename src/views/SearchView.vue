@@ -52,4 +52,17 @@ ul {
   width: 60px;
   height: 60px;
 }
+input {
+  background-color: #FFF;
+  border-style: inset;
+  height: 2em;
+  text-align: center;
+}
+#app {
+  margin-top: 30%;
+}
+h1 {
+  padding-bottom: 10%;
+}
+
 </style>

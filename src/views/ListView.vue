@@ -1,14 +1,9 @@
 <template>
   <div id="app">
-    <ul>
-      <li v-for="item in foodSearch" :key="item"  @click="getId(kouka)">
-        <img :src="require('@/assets/'+item.photo1)">{{ item.kouka }}
-      </li>
-    </ul>
-    <ul>
-      <li v-for="kouka in koukaList" :key="kouka" @click="getId(kouka)">
-        {{ kouka }}</li>
-    </ul>
+      <span v-for="item in foodSearch" :key="item"  @click="getId(kouka)">
+        <img :src="require('@/assets/'+item.photo1)"></span>
+      <li v-for="kouka in koukaList" :key="kouka" @click="getId(kouka)">{{ kouka }}
+        </li>
     <FooterComp></FooterComp>
   </div>
 </template>
@@ -47,8 +42,20 @@ export default {
 </script>
 
 <style scoped>
+#app {
+  margin-top: 30%;
+}
 li {
   border-bottom: 1px solid rgb(199, 193, 193);
   font-size: 2em;
+  /* position: relative; */
+}
+img {
+  display: flex;
+}
+span {
+  position: absolute;
+  left: 0;
+  top: 2;
 }
 </style>

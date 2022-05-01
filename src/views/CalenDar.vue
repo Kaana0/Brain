@@ -1,5 +1,6 @@
 <template>
-  <div id='app'>
+  <div id="app">
+    <h1>Calender  </h1>
     <v-calendar @dayclick="getId()"></v-calendar>
   <FooterComp></FooterComp>
   </div>
@@ -33,6 +34,10 @@ export default {
 
 <style scoped>
 #app {
-  margin-top: 60px;
+  margin-top: 30%;
 }
+h1 {
+  padding-bottom: 10%;
+}
+
 </style>

@@ -1,15 +1,10 @@
 <template>
   <div id="app">
     {{ vegitableName }}効果のあるたべもの
-
   </div>
 </template>
 <script>
 export default {
-  data() {
-    return {
-    }
-  },
   methods: {
       getId(koukaid) {
       this.$store.commit('changeVegetable', { veginame: koukaid})

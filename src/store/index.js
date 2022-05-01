@@ -21,194 +21,194 @@ state: {
     {
         name: "なす",
         photo: "nasu.svg",
-        kouka: "頭に良い",
+        kouka: "【効果】頭に良い",
         photo1: "denki.svg",
-        seibun: "あたまにいい"
+        seibun: "【成分】あたまにいい"
     },
     {
         name: "アボカド",
         photo: "avocado.svg",
-        kouka: "集中力UP",
+        kouka: "【効果】集中力UP",
         photo1: "hirameki.svg",
-        seibun: "あたまにいい"
+        seibun: "【成分】あたまにいい"
     },
     {
         name: "バナナ",
         photo: "banana.svg",
-        kouka: "記憶力UP",
+        kouka: "【効果】記憶力UP",
         photo1: "atama1.svg",
-        seibun: "あたまにいい"
+        seibun: "【成分】あたまにいい"
     },
     {
         name: "豚肉",
         photo: "buta.svg",
-        kouka: "記憶力UP",
+        kouka: "【効果】記憶力UP",
         photo1: "atama2.svg",
-        seibun: "あたまにいい"
+        seibun: "【成分】あたまにいい"
     },
     {
         name: "枝豆",
         photo: "edamame.svg",
-        kouka: "脳の活性化",
-        seibun: "あたまにいい"
+        kouka: "【効果】脳の活性化",
+        seibun: "【成分】あたまにいい"
     },
     {
         name: "チーズ",
         photo: "cheese.svg",
-        kouka: "季節別",
+        kouka: "【効果】季節別",
         photo1: "sakura.svg",
-        seibun: "あたまにいい"
+        seibun: "【成分】あたまにいい"
     },
     {
         name: "きゅうり",
         photo: "cu-ri.svg",
-        kouka: "食材別",
+        kouka: "【効果】食材別",
         photo1: "kabu.svg",
-        seibun: "あたまにいい"
+        seibun: "【成分】あたまにいい"
     },
     {
         name: "豚肉",
         photo: "niku.png",
-        kouka: "食材別",
-        seibun: "あたまにいい"
+        kouka: "【効果】食材別",
+        seibun: "【成分】あたまにいい"
     },
     {
         name: "大根",
         photo: "daikon.svg",
-        kouka: "食材別",
-        seibun: "あたまにいい"
+        kouka: "【効果】食材別",
+        seibun: "【成分】あたまにいい"
     },
     {
         name: "たまご",
         photo: "egg.svg",
         kouka: "食材別",
-        seibun: "あたまにいい"
+        seibun: "【成分】あたまにいい"
     },
     {
         name: "エリンギ",
         photo: "eringi.svg",
         kouka: "食材別",
-        seibun: "あたまにいい"
+        seibun: "【成分】あたまにいい"
     },
     {
         name: "ごま",
         photo: "goma.svg",
-        kouka: "食材別",
-        seibun: "あたまにいい"
+        kouka: "【効果】食材別",
+        seibun: "【成分】あたまにいい"
     },
     {
         name: "かぼちゃ",
         photo: "kabotya.svg",
-        kouka: "食材別",
-        seibun: "あたまにいい"
+        kouka: "【効果】食材別",
+        seibun: "【成分】あたまにいい"
     },
     {
         name: "かいわれ",
         photo: "kaiware.svg",
-        kouka: "食材別",
-        seibun: "あたまにいい"
+        kouka: "【効果】食材別",
+        seibun: "【成分】あたまにいい"
     },
     {
         name: "カキ",
         photo: "kaki.svg",
-        kouka: "食材別",
-        seibun: "あたまにいい"
+        kouka: "【効果】食材別",
+        seibun: "【成分】あたまにいい"
     },
     {
         name: "レモン",
         photo: "lemon.svg",
-        kouka: "食材別",
-        seibun: "あたまにいい"
+        kouka: "【効果】食材別",
+        seibun: "【成分】あたまにいい"
     },
     {
         name: "メロン",
         photo: "melon.svg",
-        kouka: "食材別",
-        seibun: "あたまにいい"
+        kouka: "【効果】食材別",
+        seibun: "【成分】あたまにいい"
     },
     {
         name: "なし",
         photo: "nasi.svg",
-        kouka: "食材別",
-        seibun: "あたまにいい"
+        kouka: "【効果】食材別",
+        seibun: "【成分】あたまにいい"
     },
     {
         name: "にんじん",
         photo: "ninjin.svg",
-        kouka: "食材別",
-        seibun: "あたまにいい"
+        kouka: "【効果】食材別",
+        seibun: "【成分】あたまにいい"
     },
     {
         name: "オクラ",
         photo: "okura.svg",
-        kouka: "食材別",
-        seibun: "あたまにいい"
+        kouka: "【効果】食材別",
+        seibun: "【成分】あたまにいい"
     },
     {
         name: "玉ねぎ",
         photo: "onion.svg",
-        kouka: "食材別",
-        seibun: "あたまにいい"
+        kouka: "【効果】食材別",
+        seibun: "【成分】あたまにいい"
     },
     {
         name: "オリゴ糖",
         photo: "origo.svg",
-        kouka: "食材別",
-        seibun: "あたまにいい"
+        kouka: "【効果】食材別",
+        seibun: "【成分】あたまにいい"
     },
     {
         name: "ピーナッツ",
         photo: "peanut.svg",
-        kouka: "食材別",
-        seibun: "あたまにいい"
+        kouka: "【効果】食材別",
+        seibun: "【成分】あたまにいい"
     },
     {
         name: "ピーマン",
         photo: "pi-man.svg",
-        kouka: "食材別",
-        seibun: "あたまにいい"
+        kouka: "【効果】食材別",
+        seibun: "【成分】あたまにいい"
     },
     {
         name: "じゃがいも",
         photo: "potato.svg",
-        kouka: "食材別",
-        seibun: "あたまにいい"
+        kouka: "【効果】食材別",
+        seibun: "【成分】あたまにいい"
     },
     {
         name: "さんま",
         photo: "sanma.svg",
-        kouka: "食材別",
-        seibun: "あたまにいい"
+        kouka: "【効果】食材別",
+        seibun: "【成分】あたまにいい"
     },
     {
         name: "さつまいも",
         photo: "satumaimo.svg",
-        kouka: "食材別",
-        seibun: "あたまにいい"
+        kouka: "【効果】食材別",
+        seibun: "【成分】あたまにいい"
     },
     {
         name: "そらまめ",
         photo: "soramame.svg",
-        kouka: "食材別",
-        seibun: "あたまにいい"
+        kouka: "【効果】食材別",
+        seibun: "【成分】あたまにいい"
     },
     {
         name: "トマト",
         photo: "tomato.svg",
-        kouka: "食材別",
-        seibun: "あたまにいい"
+        kouka: "【効果】食材別",
+        seibun: "【成分】あたまにいい"
     },
     {
         name: "わかめ",
         photo: "wakame.svg",
-        kouka: "食材別",
-        seibun: "あたまにいい"
+        kouka: "【効果】食材別",
+        seibun: "【成分】あたまにいい"
     },
     {
         name: "スイカ",
         photo: "suika.svg",
-        kouka: "食材別",
-        seibun: "あたまにいい"
+        kouka: "【効果】食材別",
+        seibun: "【成分】あたまにいい"
     },
     ]
 },

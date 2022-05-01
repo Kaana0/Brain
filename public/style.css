@@ -2,6 +2,11 @@
 html {
   scroll-behavior: smooth;
   background-color: rgb(173, 132, 102);
+  font-size: 90%
+}
+body {
+  margin: 0 auto;
+  width: 100%;
 }
 li {
   list-style: none;
@@ -36,4 +41,5 @@ li {
   bottom: 0;
   padding: 0%;
 }
+
 
