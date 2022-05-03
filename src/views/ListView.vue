@@ -2,12 +2,10 @@
   <div id="list">
     <ul>
       <li><router-link to="/atamaii"><img class="hirameki" src="../assets/denki.svg" alt="">頭に良い</router-link></li>
-      <li><router-link to="/atamaii"><img class="hirameki" src="../assets/atama1.svg" alt="">集中力Up</router-link></li>
-      <li><img class="hirameki" src="../assets/atama2.svg" alt="">記憶力Up</li>
-      <li><img class="hirameki" src="../assets/hirameki.svg" alt="">思考力Up</li>
-      <li><img class="hirameki" src="../assets/atama3.svg" alt="">脳の活性化</li>
-      <li><img class="hirameki" src="../assets/sakura.svg" alt="">季節別</li>
-      <li><img class="hirameki" src="../assets/kabu.svg" alt="">食材別</li>
+      <li><router-link to="/syuutyuu"><img class="hirameki" src="../assets/atama1.svg" alt="">集中力Up</router-link></li>
+      <li><router-link to="/kiokuup"><img class="hirameki" src="../assets/atama2.svg" alt="">記憶力Up</router-link></li>
+      <li><router-link to="/sikouup"><img class="hirameki" src="../assets/hirameki.svg" alt="">思考力Up</router-link></li>
+      <li><router-link to="/noukassei"><img class="hirameki" src="../assets/atama3.svg" alt="">脳の活性化</router-link></li>
     </ul>
       <!-- <span v-for="item in foodSearch" :key="item"  @click="getId(kouka)">
         <img :src="require('@/assets/'+item.photo1)"></span>
@@ -56,12 +54,19 @@ export default {
 
 <style scoped>
 li {
-  border-bottom: 1px solid rgb(199, 193, 193);
+  border-bottom: 1px solid rgb(48, 18, 18);
   font-size: 2em;
-  line-height: 3;
+  height: 18.3%;
+  align-items: center;
+}
+a, img {
+  height: 100%;
+}
+ul {
+  height: 100vh;
 }
 #list {
-  min-height: 100%;
+  min-height: 100vh;
 }
 .hirameki {
   margin-right: 10px;

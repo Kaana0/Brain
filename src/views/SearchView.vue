@@ -19,7 +19,6 @@ export default {
   data() {
     return {
       inputText: '',
-      isOn: false,
     }
   },
   computed: {

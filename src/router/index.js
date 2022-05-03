@@ -36,51 +36,6 @@ const routes = [
     component: () => import('../views/ResultView.vue')
   },
   {
-    path: '/goodbrain',
-    name: 'goodbrain',
-    component: () => import('../views/GoodBrain.vue')
-  },
-  {
-    path: '/focus',
-    name: 'focus',
-    component: () => import('../views/FocusUp.vue')
-  },
-  {
-    path: '/memory',
-    name: 'memory',
-    component: () => import('../views/MemoryUp.vue')
-  },
-  {
-    path: '/thinking',
-    name: 'thinking',
-    component: () => import('../views/ThinKing.vue')
-  },
-  {
-    path: '/brainup',
-    name: 'brainup',
-    component: () => import('../views/BrainUp.vue')
-  },
-  {
-    path: '/season',
-    name: 'season',
-    component: () => import('../views/SeaSon.vue')
-  },
-  {
-    path: '/vegetablelist',
-    name: 'vegetablelist',
-    component: () => import('../views/VegetableList.vue')
-  },
-  {
-    path: '/vegetable',
-    name: 'vegetable',
-    component: () => import('../views/VegeTable.vue')
-  },
-  {
-    path: '/nasucomp',
-    name: 'nasucomp',
-    component: () => import('../components/NasuComp.vue')
-  },
-  {
     path: '/todaypage',
     name: 'today',
     component: () => import('../views/TodayPage.vue')
@@ -91,9 +46,34 @@ const routes = [
     component: () => import('../views/AtamaIi.vue')
   },
   {
+    path: '/syuutyuu',
+    name: 'syuutyuu',
+    component: () => import('../views/SyuutyuuUp.vue')
+  },
+  {
+    path: '/kiokuup',
+    name: 'kiokuup',
+    component: () => import('../views/KiokuUp.vue')
+  },
+  {
+    path: '/sikouup',
+    name: 'sikouup',
+    component: () => import('../views/SikouUp.vue')
+  },
+  {
+    path: '/noukassei',
+    name: 'noukassei',
+    component: () => import('../views/NoukaSsei.vue')
+  },
+  {
     path: '/butaniku',
     name: 'butaniku',
     component: () => import('../views/ButanikuPage.vue')
+  },
+  {
+    path: '/melonpage',
+    name: 'melonpage',
+    component: () => import('../views/MelonPage.vue')
   },
 ]
 

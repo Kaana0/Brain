@@ -207,8 +207,8 @@ state: {
     ]
 },
 mutations: {
-    changeVegetable(state, { veginame }) {
-    state.vegetable = veginame
+    changeVegetable(state, { vegename }) {
+    state.vegetable = vegename
     },
 },
 actions: {
