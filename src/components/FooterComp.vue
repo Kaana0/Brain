@@ -1,13 +1,11 @@
 <template>
-  <div id="app">
-    <main>
+  <div id="footer">
       <ul class="footer">
         <router-link to="/search" class="li">探す</router-link>
         <router-link to="/list" class="li">一覧</router-link>
         <router-link to="/calendar" class="li">日付</router-link>
         <router-link to="/result" class="li">達成</router-link>
       </ul>
-    </main>
   </div>
 </template>
 
@@ -22,10 +20,6 @@
   line-height: 4;
 }
 ul {
-  padding: 0;
   background-color: mistyrose;
-}
-main {
-  min-height: 100vh;
 }
 </style>

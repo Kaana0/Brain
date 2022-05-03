@@ -85,6 +85,16 @@ const routes = [
     name: 'today',
     component: () => import('../views/TodayPage.vue')
   },
+  {
+    path: '/atamaii',
+    name: 'atamaii',
+    component: () => import('../views/AtamaIi.vue')
+  },
+  {
+    path: '/butaniku',
+    name: 'butaniku',
+    component: () => import('../views/ButanikuPage.vue')
+  },
 ]
 
 const router = new VueRouter({

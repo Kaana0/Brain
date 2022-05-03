@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app1">
     <router-link to="/about" class="li">使い方</router-link>
   </div>
 </template>

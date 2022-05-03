@@ -1,5 +1,5 @@
 <template>
-  <div class="home">
+  <div id="app">
     <HeaderComp></HeaderComp>
     <h1>Great</h1>
     <h1>Brain !!</h1>
@@ -17,9 +17,4 @@ export default {
 }
 </script>
 <style scoped>
-.home {
-  margin: 0 auto;
-  padding: 80px 4%;
-  width: 100%;
-}
 </style>

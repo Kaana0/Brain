@@ -5,12 +5,6 @@
 </template>
 <script>
 export default {
-  methods: {
-      getId(koukaid) {
-      this.$store.commit('changeVegetable', { veginame: koukaid})
-      this.$router.push('vegetablelist')
-      }
-  },
   computed: {
     vegitableName() { // クリックされた項目を取得
       return this.$store.state.vegetable
@@ -23,10 +17,6 @@ export default {
         return vegi.kouka === this.vegitableName
       })
     },
-        koukaList() {
-      const result = this.$store.state.fd.map((obj) => obj.kouka)
-      return new Set(result)
-    }
   }
 }
 </script>

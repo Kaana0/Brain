@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app1">
     <router-view></router-view>
   </div>
 </template>
@@ -12,11 +12,3 @@ export default {
 
 }
 </script>
-<style>
-#app {
-  text-align: center;
-}
-body {
-  margin: 0 auto;
-}
-</style>

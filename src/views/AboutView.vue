@@ -1,6 +1,5 @@
 <template>
-  <div class="about">
-    <main>
+  <div id="app">
       <div class="about">
       <h1>How to Use...</h1>
       <h3>Great Brainを手に入れよう！</h3>
@@ -8,7 +7,6 @@
       <p>記憶力、集中力、<br>脳に良い食べ物を取り入れて<br><span>Happy</span>な日々になりますように。</p>
       </div><!-- /.about -->
       <FooterComp></FooterComp>
-    </main>
   </div>
 </template>
 <script>
@@ -20,9 +18,6 @@ export default {
 }
 </script>
 <style scoped>
-.about {
-  margin-top: 30%;
-}
 h1 {
   padding-bottom: 10%;
 }

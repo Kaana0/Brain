@@ -3,12 +3,13 @@
     <h1>Search</h1>
       <input type="text" v-model="inputText">
       <ul>
-        <li v-for="(item, index) in foodSearch" :key="index" @click="getId()">
+        <li v-for="(item, index) in foodSearch" :key="index">
           {{ item.name }}
-          <br><img class="food" :src="require('@/assets/'+item.photo)"><br>{{ item.kouka }}<br>{{ item.seibun }}
+          <br><img class="food" :src="require('@/assets/'+item.photo)">
+          <br>{{ `【効果】${item.kouka}` }}<br>{{ `【成分】${item.seibun}` }}
         </li>
       </ul>
-    <img src="../assets/brain2.svg" alt="脳">
+    <img class="nou" src="../assets/brain2.svg" alt="脳" v-if="inputText == ''">
     <FooterComp></FooterComp>
   </div>
 </template>
@@ -18,13 +19,8 @@ export default {
   data() {
     return {
       inputText: '',
+      isOn: false,
     }
-  },
-  methods: {
-    getId(koukaid) {
-  this.$store.commit('changeVegetable', { veginame: koukaid})
-  this.$router.push('vegetablelist')
-  }
   },
   computed: {
     foodSearch() {
@@ -37,6 +33,9 @@ export default {
       }
     },
   },
+  methods: {
+
+  },
   components: {
     FooterComp,
   }
@@ -48,6 +47,11 @@ ul {
   flex-wrap: wrap;
   justify-content: center;
 }
+li {
+  background-color: antiquewhite;
+  width: 70%;
+  line-height: 2;
+}
 .food {
   width: 60px;
   height: 60px;
@@ -57,12 +61,9 @@ input {
   border-style: inset;
   height: 2em;
   text-align: center;
-}
-#app {
-  margin-top: 30%;
+  margin-bottom: 2em;
 }
 h1 {
-  padding-bottom: 10%;
+  padding-bottom: 5%;
 }
-
 </style>

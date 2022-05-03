@@ -33,9 +33,6 @@ export default {
 </script>
 
 <style scoped>
-#app {
-  margin-top: 30%;
-}
 h1 {
   padding-bottom: 10%;
 }
