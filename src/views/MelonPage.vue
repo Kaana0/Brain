@@ -1,13 +1,13 @@
 <template>
   <div id="food_page">
     <h1>{{ vegetableName }}</h1>
-  <ul>
+  <!-- <ul>
     <li v-for="item in filteredList" :key="item">
       {{ item.name }}
       <br><img class="food" :src="require('@/assets/'+item.photo)">
       <br>{{ `【効果】${item.kouka}` }}<br>{{ `【成分】${item.seibun}` }}
     </li>
-  </ul>
+  </ul> -->
   </div>
 </template>
 <script>
@@ -21,7 +21,7 @@ export default {
     },
     filteredList() {
       return this.vegetableList.filter((vege) => {
-        return vege.name.indexOf() === this.vegetableName
+        return vege.name === this.vegetableName
       })
     },
     // foodSearch() {

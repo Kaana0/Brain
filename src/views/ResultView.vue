@@ -2,6 +2,7 @@
   <div id="app">
     <h1>あなたの脳は今...</h1>
     <h1>85%</h1>
+    <img src="../assets/brain3.svg" alt="">
     <FooterComp></FooterComp>
   </div>
 </template>

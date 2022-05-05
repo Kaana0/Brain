@@ -10,6 +10,7 @@ html {
 }
 #list {
   background-color: rgb(208, 182, 157);
+  min-height: 100vh;
 }
 @media (min-width: 768px) {
   html {
