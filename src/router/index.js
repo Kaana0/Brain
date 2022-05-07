@@ -201,8 +201,8 @@ const routes = [
     component: () => import('../views/ButanikuPage.vue')
   },
   {
-    path: '/melonpage',
-    name: 'melonpage',
+    path: '/melon',
+    name: 'melon',
     component: () => import('../views/MelonPage.vue')
   },
 ]
