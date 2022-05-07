@@ -27,20 +27,3 @@ export default {
   }
 }
 </script>
-<style scoped>
-.food_list {
-  display: flex;
-  width: 100%;
-  align-items: center;
-}
-.food_list_li {
-  width: 50%;
-  height: 155px;
-  border: 1px solid rgb(84, 60, 60);
-  font-size: 30px;
-  color: bisque;
-}
-.food_img {
-  width: 100px;
-}
-</style>

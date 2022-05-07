@@ -77,28 +77,46 @@ header {
   color: rgb(92, 23, 23);
   padding-bottom: 10px;
 }
-/* @media (min-width: 576px) {
-  #app1 {
-    max-width: 540px;
+.food_list {
+  display: flex;
+  align-items: center;
+}
+.food_list_li {
+  width: 50%;
+  height: 155px;
+  border: 1px solid rgb(84, 60, 60);
+  font-size: 30px;
+  color: bisque;
+}
+.food_img {
+  width: 100px;
+}
+
+@media (min-width: 576px) {
+  #app, #food_page, #app {
+    padding-top: 10%;
   }
-} */
+}
 /*タブレット 〜 */
 @media (min-width: 768px) {
-  #app1, #list {
-    max-height: 720px;
+  .food_list_li {
+    height: 160px;
+  }  
+  #app {
+    padding-top: 10%;
   }
 }
 /*PC 〜 */
 @media (min-width: 992px) {
-  #app1 {
-    height: 100%;
-  }
+  .food_list_li {
+    height: 170px;
+  }  
 }
 /*PC大 〜 */
 @media (min-width: 1200px) {
-  #app1 {
-    height: 100%;
-  }
+  .food_list_li {
+    height: 180px;
+  }  
 }
 
 /* @media (min-width: 768px) {

@@ -1,7 +1,7 @@
 <template>
   <div id="list">
     <ul class="food_list">
-      <li class="food_list_li"><router-link to="butaniku">豚肉<br><img class="food_img" :src="require('@/assets/buta.svg')"></router-link></li>
+      <li class="food_list_li"><router-link to="/butaniku">豚肉<br><img class="food_img" :src="require('@/assets/buta.svg')"></router-link></li>
       <li class="food_list_li"><router-link to="/melon">メロン<br><img class="food_img" :src="require('@/assets/melon.svg')"></router-link></li>
     </ul>
     <ul class="food_list">
@@ -39,20 +39,3 @@ export default {
   }
 }
 </script>
-<style scoped>
-.food_list {
-  display: flex;
-  width: 100%;
-  align-items: center;
-}
-.food_list_li {
-  width: 50%;
-  height: 155px;
-  border: 1px solid rgb(84, 60, 60);
-  font-size: 30px;
-  color: bisque;
-}
-.food_img {
-  width: 100px;
-}
-</style>
