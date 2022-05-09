@@ -46,6 +46,11 @@ const routes = [
     component: () => import('../views/TodayPage.vue')
   },
   {
+    path: '/todaypage2',
+    name: 'today',
+    component: () => import('../views/TodayPage.vue')
+  },
+  {
     path: '/atamaii',
     name: 'atamaii',
     component: () => import('../views/AtamaIi.vue')

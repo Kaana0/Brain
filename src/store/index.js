@@ -1,22 +1,25 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 import axios from 'axios'
-
 Vue.use(Vuex)
 
 export default new Vuex.Store({
 state: {
+    TodayFood: [
+        {name: "野菜", isShow: false },
+        {name: "果物", isShow: false },
+        {name: "きのこ", isShow: false },
+        {name: "海藻", isShow: false },
+        {name: "豆", isShow: false },
+        {name: "芋", isShow: false },
+        {name: "魚", isShow: false },
+        {name: "肉", isShow: false },
+        {name: "乳製品", isShow: false },
+        {name: "種", isShow: false },
+        // {name: "洗剤", isShow: false },
+    ],
     vegetable: '',
     time: '',
-    atama:[
-    { name: "豚肉"},
-    { name: "オリゴ糖"},
-    { name: "秋刀魚"},
-    ],
-    kouka:[
-    { name: "なす"},
-    { name: 'アスパラガス'},
-    ],
     fd:[
     {
         name: "なす",
@@ -207,10 +210,17 @@ state: {
     ]
 },
 mutations: {
-    changeVegetable(state, { vegename }) {
-    state.vegetable = vegename
+    // changeVegetable(state, { vegename }) {
+    // state.vegetable = vegename
+    // },
+    getStanp(state, {itemname}) {
+        let result = state.TodayFood.find((e) => {
+            return e.name === itemname
+        })
+        result.isShow = !result.isShow
     },
 },
+
 actions: {
     fetchItems({ commit }) {
     return axios.get('')

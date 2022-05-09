@@ -1,7 +1,8 @@
 <template>
-  <div id="app">
+  <div id="app2">
     <h1>Calender  </h1>
-    <v-calendar @dayclick="getId()"></v-calendar>
+    <v-calendar class="v-calendar" @dayclick="getId()">
+    </v-calendar>
   <FooterComp></FooterComp>
   </div>
 </template>
@@ -11,6 +12,7 @@ import FooterComp from '@/components/FooterComp.vue';
 export default {
   data() {
     return {
+      color: 'red'
     };
   },
   methods: {
@@ -21,8 +23,7 @@ export default {
       this.menu = false;
       return;
     },
-    getId(koukaid) {
-      this.$store.commit('changeVegetable', { veginame: koukaid})
+    getId() {
       this.$router.push('todaypage')
     }
   },
@@ -36,5 +37,21 @@ export default {
 h1 {
   padding-bottom: 10%;
 }
-
+.v-calendar {
+  width: -webkit-fill-available;
+  height: 400px;
+}
+#app2 {
+  padding-top: 10%;
+  min-height: 100vh;
+  background-color: rgb(173, 132, 102);
+}
+.vc-day {
+  min-height: 65px !important;
+}
+.vc-day[data-v-4420d078] {
+    position: relative;
+    min-height: 60px;
+    z-index: 1;
+}
 </style>
