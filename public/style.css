@@ -109,13 +109,13 @@ header {
 /*PC 〜 */
 @media (min-width: 992px) {
   .food_list_li {
-    height: 170px;
+    height: 160px;
   }  
 }
 /*PC大 〜 */
 @media (min-width: 1200px) {
   .food_list_li {
-    height: 180px;
+    height: 170px;
   }  
 }
 

@@ -39,19 +39,10 @@ h1 {
 }
 .v-calendar {
   width: -webkit-fill-available;
-  height: 400px;
 }
 #app2 {
   padding-top: 10%;
   min-height: 100vh;
   background-color: rgb(173, 132, 102);
-}
-.vc-day {
-  min-height: 65px !important;
-}
-.vc-day[data-v-4420d078] {
-    position: relative;
-    min-height: 60px;
-    z-index: 1;
 }
 </style>
