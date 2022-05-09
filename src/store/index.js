@@ -21,7 +21,8 @@ state: {
     vegetable: '',
     time: '',
     fd:[
-    {
+    
+        {
         name: "なす",
         photo: "nasu.svg",
         kouka: "ガンや生活習慣病のもとになる活性酸素を抑える力が強く、コレステロールの吸収を抑える作用がある。認知症予防物質が他の野菜の約3000倍。",
@@ -207,7 +208,11 @@ state: {
         kouka: "血糖値を下げる。中性脂肪を減らす。認知症を防ぐ。",
         seibun: "リコピン、βカロテン、シトルリン、カリウム。糖尿病、結腸癌と関節炎等に繋がる炎症を鎮める効果をもっています。"
     },
-    ]
+    ],
+    nowDate: '',
+},
+getters: {
+    // nowDateで絞り込んだTodayFoodを返す
 },
 mutations: {
     // changeVegetable(state, { vegename }) {
@@ -219,6 +224,11 @@ mutations: {
         })
         result.isShow = !result.isShow
     },
+
+
+    reNowDate(state, {nowDate}) {
+        state.nowDate = nowDate
+    }
 },
 
 actions: {
