@@ -12,11 +12,6 @@ html {
   background-color: rgb(208, 182, 157);
   min-height: 100vh;
 }
-@media (min-width: 768px) {
-  html {
-    font-size: 87.5%;
-  }
-}
 body {
   margin: 0 auto;
   width: 100%;
@@ -83,9 +78,8 @@ header {
 }
 .food_list_li {
   width: 50%;
-  height: 155px;
   border: 1px solid rgb(84, 60, 60);
-  font-size: 30px;
+  font-size: 17px;
   color: bisque;
 }
 .food_img {
@@ -96,11 +90,19 @@ header {
   #app, #food_page, #app {
     padding-top: 10%;
   }
+  .food_list_li {
+    height: 260px;
+    line-height: 5;
+  }  
 }
 /*タブレット 〜 */
 @media (min-width: 768px) {
+  html {
+    font-size: 200.5%;
+  }
   .food_list_li {
-    height: 160px;
+    height: 260px;
+    line-height: 3;
   }  
   #app {
     padding-top: 10%;
@@ -109,19 +111,19 @@ header {
 /*PC 〜 */
 @media (min-width: 992px) {
   .food_list_li {
-    height: 160px;
+    height: 260px;
+    line-height: 3;
   }  
 }
 /*PC大 〜 */
 @media (min-width: 1200px) {
   .food_list_li {
-    height: 170px;
-  }  
+    height: 280px; 
+    line-height: 3;
+  }
+  .todaypage {
+    width: 19em;
+    height: 20em;
+  }
 }
 
-/* @media (min-width: 768px) {
-  #footer {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-} */

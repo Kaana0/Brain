@@ -5,6 +5,23 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
 state: {
+    dailyFoodList: [
+        {
+            date: '2022-5-11',
+            foodList: [
+                {name: "野菜", isShow: false },
+                {name: "果物", isShow: false },
+                {name: "きのこ", isShow: false },
+                {name: "海藻", isShow: false },
+                {name: "豆", isShow: false },
+                {name: "芋", isShow: false },
+                {name: "魚", isShow: false },
+                {name: "肉", isShow: false },
+                {name: "乳製品", isShow: false },
+                {name: "種", isShow: false },
+            ]
+        }
+    ],
     TodayFood: [
         {name: "野菜", isShow: false },
         {name: "果物", isShow: false },
@@ -20,6 +37,8 @@ state: {
     ],
     vegetable: '',
     time: '',
+    Today: '',
+    clickDay: '',
     fd:[
     
         {
@@ -219,8 +238,11 @@ mutations: {
     // state.vegetable = vegename
     // },
     getStanp(state, {itemname}) {
-        let result = state.TodayFood.find((e) => {
-            return e.name === itemname
+        const lists = state.dailyFoodList.find((item) => {
+            return item.date === state.clickDay
+        })
+        let result = lists.foodList.find((item) => {
+            return item.name === itemname
         })
         result.isShow = !result.isShow
     },
@@ -228,6 +250,29 @@ mutations: {
 
     reNowDate(state, {nowDate}) {
         state.nowDate = nowDate
+    },
+
+    addClickDay(state, {day}) {
+        state.clickDay = day
+    },
+    addNewList(state) {
+        state.dailyFoodList.push(
+            {
+                date: state.clickDay,
+                foodList: [
+                    {name: "野菜", isShow: false },
+                    {name: "果物", isShow: false },
+                    {name: "きのこ", isShow: false },
+                    {name: "海藻", isShow: false },
+                    {name: "豆", isShow: false },
+                    {name: "芋", isShow: false },
+                    {name: "魚", isShow: false },
+                    {name: "肉", isShow: false },
+                    {name: "乳製品", isShow: false },
+                    {name: "種", isShow: false },
+                ]
+            }
+        )
     }
 },
 

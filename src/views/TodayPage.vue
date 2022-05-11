@@ -1,13 +1,12 @@
 <template>
   <div id="list">
-    <h1>{{  }}今日のページ</h1>
+    <h1>{{ TodayPage }}日</h1>
     <ul>
-      <li v-for="(item, index) in foodSearch" :key="index" @click="getStanp(item.name)">
+      <li class="todaypage" v-for="(item, index) in filteredFoodList.foodList" :key="index" @click="getStanp(item.name)">
         <img v-show="item.isShow" src="../assets/ok.svg" alt="">{{ item.name }}
       </li>
     </ul>
     <router-link class="routerlink" to="/result">結果</router-link>
-    
     <FooterComp></FooterComp>
   </div>
 </template>
@@ -16,7 +15,20 @@ import FooterComp from '@/components/FooterComp.vue';
 export default {
   data() {
     return {
+      weekdays: ['日', '月', '火', '水', '木', '金', '土'],
+      year:2020,
+      month:3,
+      day:-1,
     }
+  },
+  mounted() {
+    let date = new Date()
+    let y = date.getFullYear()
+    let m = ('0' + (date.getMonth() + 1)).slice(-2)
+    let d = ('0' + date.getDate()).slice(-2)
+    this.year = y
+    this.month = Number(m)
+    this.today = y + '-' + m + '-' + d
   },
   methods: {
     getStanp(itemname) {
@@ -24,12 +36,31 @@ export default {
     },
   },
   computed: {
-      TodayFood() {
-        return this.$store.state.TodayFood
-      },
-      foodSearch() {
-        return this.$store.state.TodayFood
+    dailyFoodList() {
+      return this.$store.state.dailyFoodList
+      // if(this.$store.state.dailyFoodList) {
+      //   return this.$store.state.dailyFoodList
+      // } else {
+      //   this.$store.commit('addNewList')
+      //   return this.$store.state.dailyFoodList
+      // }
     },
+    filteredFoodList() {
+      return this.dailyFoodList.find((item) => {
+        return item.date === this.TodayPage
+      })
+    },
+    foodSearch() {
+      return this.$store.state.TodayFood
+    },
+    TodayPage() {
+      return this.$store.state.clickDay
+    },
+    filterdToday() {
+      return this.Date.filter((day) => {
+      return day === this.TodayPage
+      })
+    }
   },
   components: {
     FooterComp,
@@ -45,7 +76,7 @@ ul {
   margin: auto;
   padding: 0 20px;
 }
-li {
+.todaypage {
   background-color: antiquewhite;
   border: 1px solid rgb(73, 15, 15);
   width: 6em;
@@ -59,21 +90,35 @@ img {
   position: absolute;
   top: -1.5em;
   left: 0;
+  width: 8em;
 }
 #app {
   margin-top: 15%;
 }
 h1 {
-  padding-bottom: 10%;
+  padding-bottom: 20px;
 }
 .routerlink {
   background-color: bisque;
   border: 1px solid rgb(73, 15, 15);
-  width: 6em;
+  width: 5em;
   height: 3em;
   line-height: 3;
-  margin-top: 3em;
+  margin-top: 20px;
   border-radius: 30px;
   display: inline-block;
 }
+@media (min-width: 992px) {
+  .todaypage {
+    width: 10em;
+    height: 5em;
+    line-height: 5;
+  }
+  .routerlink {
+    width: 10em;
+    height: 5em;
+    line-height: 5;
+  }
+}
+
 </style>
