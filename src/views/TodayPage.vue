@@ -6,7 +6,7 @@
         <img v-show="item.isShow" src="../assets/ok.svg" alt="">{{ item.name }}
       </li>
     </ul>
-    <router-link class="routerlink" to="/result">結果</router-link>
+    <p @click="set" class="routerlink">結果</p>
     <FooterComp></FooterComp>
   </div>
 </template>
@@ -31,6 +31,10 @@ export default {
     this.today = y + '-' + m + '-' + d
   },
   methods: {
+    set() {
+      this.$store.dispatch('saveData')
+      this.$router.push('result')
+    },
     getStanp(itemname) {
       this.$store.commit('getStanp' ,{itemname})
     },
@@ -38,12 +42,6 @@ export default {
   computed: {
     dailyFoodList() {
       return this.$store.state.dailyFoodList
-      // if(this.$store.state.dailyFoodList) {
-      //   return this.$store.state.dailyFoodList
-      // } else {
-      //   this.$store.commit('addNewList')
-      //   return this.$store.state.dailyFoodList
-      // }
     },
     filteredFoodList() {
       return this.dailyFoodList.find((item) => {

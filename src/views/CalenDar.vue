@@ -139,6 +139,7 @@ export default {
 <style scoped>
 .redText {
   color: red;
+  content: url(@/assets/yoku.svg);
 }
 
 h1 {

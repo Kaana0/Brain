@@ -6,21 +6,21 @@ Vue.use(Vuex)
 export default new Vuex.Store({
 state: {
     dailyFoodList: [
-        {
-            date: '2022-5-11',
-            foodList: [
-                {name: "野菜", isShow: false },
-                {name: "果物", isShow: false },
-                {name: "きのこ", isShow: false },
-                {name: "海藻", isShow: false },
-                {name: "豆", isShow: false },
-                {name: "芋", isShow: false },
-                {name: "魚", isShow: false },
-                {name: "肉", isShow: false },
-                {name: "乳製品", isShow: false },
-                {name: "種", isShow: false },
-            ]
-        }
+        // {
+        //     date: '2022-5-11',
+        //     foodList: [
+        //         {name: "野菜", isShow: false },
+        //         {name: "果物", isShow: false },
+        //         {name: "きのこ", isShow: false },
+        //         {name: "海藻", isShow: false },
+        //         {name: "豆", isShow: false },
+        //         {name: "芋", isShow: false },
+        //         {name: "魚", isShow: false },
+        //         {name: "肉", isShow: false },
+        //         {name: "乳製品", isShow: false },
+        //         {name: "種", isShow: false },
+        //     ]
+        // }
     ],
     TodayFood: [
         {name: "野菜", isShow: false },
@@ -273,6 +273,12 @@ mutations: {
                 ]
             }
         )
+    },
+    setData(state, result) {
+        state.dailyFoodList = result
+    },
+    save(state) {
+        localStorage.setItem('obj',JSON.stringify(state.dailyFoodList))
     }
 },
 
@@ -282,6 +288,25 @@ actions: {
     .then(response => {
         commit('receiveItems', response.data)
     })
+    },
+    saveData({commit}) {
+        commit('save')
+    },
+    loadData({ commit }) {
+        const result = JSON.parse(localStorage.getItem('obj'))
+        if(result) {
+            commit('setData', result)
+        } else {
+            let date = new Date()
+            let y = date.getFullYear()
+            let m = ('0' + (date.getMonth() + 1)).slice(-2)
+            let d = ('0' + date.getDate()).slice(-2)
+            const today = y + '-' + m + '-' + d
+            commit('addClickDay', { day: today})
+            commit('addNewList')
+        }
     }
+
 },
+
 })

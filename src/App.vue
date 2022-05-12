@@ -8,7 +8,9 @@
 
 export default {
   components: {
+  },
+  mounted() {
+      this.$store.dispatch('loadData')
   }
-
 }
 </script>
