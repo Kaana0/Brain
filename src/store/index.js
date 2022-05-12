@@ -295,7 +295,7 @@ mutations: {
         localStorage.setItem('obj',JSON.stringify(state.dailyFoodList))
     },
     save2(state) {
-        localStorage.setItem('obj',JSON.stringify(state.fd))
+        localStorage.setItem('obj2',JSON.stringify(state.fd))
     }
 },
 
@@ -323,7 +323,7 @@ actions: {
             let d = ('0' + date.getDate()).slice(-2)
             const today = y + '-' + m + '-' + d
             commit('addClickDay', { day: today})
-            commit('addNewList')
+            // commit('addNewList')
         }
     },
     loadData2({ commit }) {
@@ -337,7 +337,7 @@ actions: {
             let d = ('0' + date.getDate()).slice(-2)
             const today = y + '-' + m + '-' + d
             commit('addClickFood', { food: today})
-            commit('addNewList2')
+            // commit('addNewList2')
         }
     }
 },
