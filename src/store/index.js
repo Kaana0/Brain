@@ -6,21 +6,7 @@ Vue.use(Vuex)
 export default new Vuex.Store({
 state: {
     dailyFoodList: [
-        // {
-        //     date: '2022-5-11',
-        //     foodList: [
-        //         {name: "野菜", isShow: false },
-        //         {name: "果物", isShow: false },
-        //         {name: "きのこ", isShow: false },
-        //         {name: "海藻", isShow: false },
-        //         {name: "豆", isShow: false },
-        //         {name: "芋", isShow: false },
-        //         {name: "魚", isShow: false },
-        //         {name: "肉", isShow: false },
-        //         {name: "乳製品", isShow: false },
-        //         {name: "種", isShow: false },
-        //     ]
-        // }
+    
     ],
     TodayFood: [
         {name: "野菜", isShow: false },
@@ -229,6 +215,7 @@ state: {
     },
     ],
     nowDate: '',
+    nowDate2: '',
 },
 getters: {
     // nowDateで絞り込んだTodayFoodを返す
@@ -246,8 +233,6 @@ mutations: {
         })
         result.isShow = !result.isShow
     },
-
-
     reNowDate(state, {nowDate}) {
         state.nowDate = nowDate
     },
@@ -274,11 +259,43 @@ mutations: {
             }
         )
     },
+    reNowDate2(state, {nowDate2}) {
+        state.nowDate2 = nowDate2
+    },
+
+    addClickFood(state, {food}) {
+        state.vegetable = food
+    },
+    addNewList2(state) {
+        state.dailyFoodList.push(
+            {
+                date: state.vegetable,
+                foodList: [
+                    {name: "野菜", isShow: false },
+                    {name: "果物", isShow: false },
+                    {name: "きのこ", isShow: false },
+                    {name: "海藻", isShow: false },
+                    {name: "豆", isShow: false },
+                    {name: "芋", isShow: false },
+                    {name: "魚", isShow: false },
+                    {name: "肉", isShow: false },
+                    {name: "乳製品", isShow: false },
+                    {name: "種", isShow: false },
+                ]
+            }
+        )
+    },
     setData(state, result) {
         state.dailyFoodList = result
     },
+    setData2(state, resultArray) {
+        state.dailyFoodList = resultArray
+    },
     save(state) {
         localStorage.setItem('obj',JSON.stringify(state.dailyFoodList))
+    },
+    save2(state) {
+        localStorage.setItem('obj',JSON.stringify(state.fd))
     }
 },
 
@@ -291,6 +308,9 @@ actions: {
     },
     saveData({commit}) {
         commit('save')
+    },
+    saveData2({commit}) {
+        commit('save2')
     },
     loadData({ commit }) {
         const result = JSON.parse(localStorage.getItem('obj'))
@@ -305,8 +325,20 @@ actions: {
             commit('addClickDay', { day: today})
             commit('addNewList')
         }
+    },
+    loadData2({ commit }) {
+        const resultArray = JSON.parse(localStorage.getItem('obj2'))
+        if(resultArray) {
+            commit('setData2', resultArray)
+        } else {
+            let date = new Date()
+            let y = date.getFullYear()
+            let m = ('0' + (date.getMonth() + 1)).slice(-2)
+            let d = ('0' + date.getDate()).slice(-2)
+            const today = y + '-' + m + '-' + d
+            commit('addClickFood', { food: today})
+            commit('addNewList2')
+        }
     }
-
 },
-
 })

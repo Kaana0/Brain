@@ -25,6 +25,11 @@ export default {
     })
     this.count = Math.floor((counter / tf.length) * 100)
   },
+  computed: {
+    // count() {
+    //   return this.$store.state.click
+    // }
+  },
   components: {
     FooterComp,
   }

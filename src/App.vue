@@ -11,6 +11,7 @@ export default {
   },
   mounted() {
       this.$store.dispatch('loadData')
+      this.$store.dispatch('loadData2')
   }
 }
 </script>

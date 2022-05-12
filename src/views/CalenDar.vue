@@ -62,12 +62,10 @@ export default {
 },
     dateClick(dayNum) {
       // 日付をクリックされた！
-
       // 変数clickDayに、年月日を代入する(yyyy-mm-dd形式)
       const clickDay = this.year + '-' + this.month + '-' + dayNum
       // VuexのmutationsであるaddClickDayを呼び出す 引数として👆で作ったclickDayを渡す
       this.$store.commit('addClickDay', { day: clickDay })
-
       // VuexのdailyFoodListの中にクリックされた日付のデータがあるかどうか
       const result = this.$store.state.dailyFoodList.find((item) => {
         return item.date === clickDay
