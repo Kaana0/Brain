@@ -5,9 +5,7 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
 state: {
-    dailyFoodList: [
-    
-    ],
+    dailyFoodList: [],
     TodayFood: [
         {name: "野菜", isShow: false },
         {name: "果物", isShow: false },
@@ -218,6 +216,7 @@ state: {
     nowDate2: '',
 },
 getters: {
+    time: state => state.time
     // nowDateで絞り込んだTodayFoodを返す
 },
 mutations: {
@@ -296,6 +295,23 @@ mutations: {
     },
     save2(state) {
         localStorage.setItem('obj2',JSON.stringify(state.fd))
+    },
+    updateTime(state) {
+        //本日現在の日付オブジェクトを作る
+        let today = new Date();
+        let week = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+        //現在の時間を取得
+        // let hour = today.getHours();
+        let hour = ("0"+today.getHours()).slice(-2);
+        //現在の分を取得
+        // let min = today.getMinutes();
+        let min = ("0"+today.getMinutes()).slice(-2);
+        //現在の秒を取得
+        // let sec = today.getSeconds();
+        let sec = ("0"+today.getSeconds()).slice(-2)
+        //曜日の取得
+        let day = today.getDay();
+        state.time = `${hour}:${min}:${sec}(${week[day]})`;
     }
 },
 
@@ -337,8 +353,12 @@ actions: {
             let d = ('0' + date.getDate()).slice(-2)
             const today = y + '-' + m + '-' + d
             commit('addClickFood', { food: today})
-            // commit('addNewList2')
         }
+    },
+    updateTime({commit}) {
+        setInterval(() => {
+        commit('updateTime');
+        }, 1000)
     }
 },
 })

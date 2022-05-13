@@ -1,7 +1,10 @@
 @charset 'UTF-8';
 html {
   scroll-behavior: smooth;
-  font-size: 90%;
+  font-size: 62.5%;
+}
+* {
+  font-size: 1.4rem;
 }
 #app {
   padding-top: 25%;
@@ -12,10 +15,7 @@ html {
   background-color: rgb(208, 182, 157);
   min-height: 100vh;
 }
-body {
-  margin: 0 auto;
-  width: 100%;
-  min-height: 100vh;
+#app1 {
   text-align: center;
 }
 li {

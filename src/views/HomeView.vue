@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+        <ClockComp></ClockComp>
     <HeaderComp></HeaderComp>
     <h1>Great</h1>
     <h1>Brain !!</h1>
@@ -9,10 +10,12 @@
 
 <script>
 import HeaderComp from '@/components/HeaderComp.vue';
+import ClockComp from '@/components/ClockComp.vue';
 
 export default {
   components: {
     HeaderComp,
+    ClockComp
   }
 }
 </script>
