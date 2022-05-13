@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-        <ClockComp></ClockComp>
+    <ClockComp></ClockComp>
     <HeaderComp></HeaderComp>
     <h1>Great</h1>
     <h1>Brain !!</h1>

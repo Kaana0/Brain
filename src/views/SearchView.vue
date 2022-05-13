@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <ClockComp></ClockComp>
     <h1>Search</h1>
       <input type="text" v-model="inputText">
       <ul>
@@ -14,6 +15,7 @@
   </div>
 </template>
 <script>
+import ClockComp from '@/components/ClockComp.vue';
 import FooterComp from '@/components/FooterComp.vue';
 export default {
   data() {
@@ -36,6 +38,7 @@ export default {
 
   },
   components: {
+    ClockComp,
     FooterComp,
   }
 }
@@ -48,7 +51,6 @@ ul {
 }
 li {
   background-color: antiquewhite;
-  width: 70%;
   line-height: 2;
 }
 .food {
@@ -63,6 +65,6 @@ input {
   margin-bottom: 2em;
 }
 h1 {
-  padding-bottom: 5%;
+  padding: 10px;
 }
 </style>
