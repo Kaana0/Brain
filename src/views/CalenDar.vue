@@ -25,7 +25,6 @@
   <FooterComp></FooterComp>
 </div>
 </template>
-
 <script>
 import FooterComp from '@/components/FooterComp.vue';
 export default {
@@ -59,7 +58,7 @@ export default {
       } else {
         return false
       }
-},
+    },
     dateClick(dayNum) {
       // 日付をクリックされた！
       // 変数clickDayに、年月日を代入する(yyyy-mm-dd形式)
@@ -134,6 +133,8 @@ export default {
 }
 }
 </script>
+
+
 <style scoped>
 .redText {
   color: red;

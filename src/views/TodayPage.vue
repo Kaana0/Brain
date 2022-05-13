@@ -54,11 +54,11 @@ export default {
     TodayPage() {
       return this.$store.state.clickDay
     },
-    filterdToday() {
-      return this.Date.filter((day) => {
-      return day === this.TodayPage
-      })
-    }
+    // filterdToday() {
+    //   return this.Date.filter((day) => {
+    //   return day === this.TodayPage
+    //   })
+    // }
   },
   components: {
     FooterComp,
