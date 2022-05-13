@@ -54,15 +54,14 @@ li {
   line-height: 2;
 }
 .food {
-  width: 60px;
-  height: 60px;
+  width: 40px;
+  height: 40px;
 }
 input {
   background-color: #FFF;
   border-style: inset;
-  height: 2em;
+  height: 20px;
   text-align: center;
-  margin-bottom: 2em;
 }
 h1 {
   padding: 10px;
