@@ -46,9 +46,6 @@ export default {
       })
       return counter / this.todaysDailyFoodList.foodList.length * 100
     }
-    // count() {
-    //   return this.$store.state.click
-    // }
   },
   components: {
     FooterComp,

@@ -82,25 +82,25 @@ export default {
     isToday(day) {
       let date = this.year + '-' + ('0' + this.month).slice(-2) + "-" + day
       if(this.today === date){
-          return true
+        return true
       }
       return false
     },
     setLastMonth() {
       if (this.month === 1) {
-          this.year--
-          this.month = 12
+        this.year--
+        this.month = 12
       } else {
-          this.month--
+        this.month--
       }
       this.day = -1
     },
     setNextMonth() {
       if (this.month === 12) {
-          this.year++
-          this.month = 1
+        this.year++
+        this.month = 1
       } else {
-          this.month++
+        this.month++
       }
       this.day = -1
     }

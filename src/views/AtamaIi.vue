@@ -23,16 +23,8 @@
 import FooterComp from '@/components/FooterComp.vue';
 export default {
   methods: {
-    getVege(fdName) {
-      this.$store.commit('changeVegetable', { vegename: fdName})
-      this.$router.push('melonpage')
-    }
   },
   computed: {
-    // nameList() {
-    //   const result = this.fdData.map((obj) => obj.name)
-    //   return new Set(result)
-    // }
   },
   components: {
     FooterComp,

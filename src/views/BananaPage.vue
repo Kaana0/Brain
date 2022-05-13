@@ -1,5 +1,6 @@
 <template>
   <div id="food_page">
+    <OkiniiriComp></OkiniiriComp>
       <ul>
         <li v-for="(item, index) in foodSearch" :key="index">
           <h1 class="food_ttl">{{ item.name }}</h1>
@@ -14,11 +15,11 @@
   </div>
 </template>
 <script>
+import OkiniiriComp from '@/components/OkiniiriComp.vue';
 import FooterComp from '@/components/FooterComp.vue';
 export default {
   data() {
     return {
-      inputText: '',
     }
   },
   computed: {
@@ -29,6 +30,7 @@ export default {
     },
   },
   components: {
+    OkiniiriComp,
     FooterComp,
   }
 }

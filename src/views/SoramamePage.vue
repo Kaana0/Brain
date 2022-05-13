@@ -18,7 +18,6 @@ import FooterComp from '@/components/FooterComp.vue';
 export default {
   data() {
     return {
-      inputText: '',
     }
   },
   computed: {
