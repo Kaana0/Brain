@@ -27,9 +27,6 @@ export default {
     },
   },
   methods: {
-    set2() {
-    }
-
   },
   components: {
     OkiniiriComp,

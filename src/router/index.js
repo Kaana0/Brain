@@ -41,11 +41,6 @@ const routes = [
     component: () => import('../views/OkiniiRi.vue')
   },
   {
-    path: '/congrats',
-    name: 'congrats',
-    component: () => import('../views/CongRats.vue')
-  },
-  {
     path: '/todaypage',
     name: 'today',
     component: () => import('../views/TodayPage.vue')

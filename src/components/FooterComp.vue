@@ -4,7 +4,7 @@
         <router-link to="/search" class="li">探す</router-link>
         <router-link to="/list" class="li">一覧</router-link>
         <router-link to="/calendar" class="li">日付</router-link>
-        <router-link to="/okiniiri" class="li">お気に入り</router-link>
+        <!-- <router-link to="/okiniiri" class="li">お気に入り</router-link> -->
       </ul>
   </div>
 </template>
