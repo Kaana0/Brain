@@ -25,7 +25,7 @@ export default {
 <style scoped>
 .text__bound {
   animation: key .3s ease infinite alternate;
-  font-size: 40px;
+  font-size: 50px;
 }
 @keyframes key {
   0% {transform: translateY(0px);}
