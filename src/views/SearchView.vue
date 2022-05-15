@@ -1,8 +1,8 @@
 <template>
   <div id="app">
     <ClockComp></ClockComp>
-    <h1>Search</h1>
-      <input type="text" v-model="inputText">
+    <h1 class="food">Search</h1>
+      <input  type="text" v-model="inputText">
       <ul>
         <li v-for="(item, index) in foodSearch" :key="index">
           {{ item.name }}
@@ -48,20 +48,36 @@ ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin: 20px;
 }
 li {
   background-color: antiquewhite;
   line-height: 2;
+  padding: 0 10px;
 }
 .food {
-  width: 40px;
-  height: 40px;
+  height: 70px;
+  animation: key .3s ease infinite alternate;
+  font-size: 50px;
 }
+@keyframes key {
+  0% {transform: translateY(0px);}
+  100% {transform: translateY(-10px);}
+}
+.nou {
+  animation: key .3s ease infinite alternate;
+}
+@keyframes key {
+  0% {transform: translateY(0px);}
+  100% {transform: translateY(-10px);}
+}
+
 input {
   background-color: #FFF;
   border-style: inset;
   height: 25px;
   text-align: center;
+  margin-top: 30px;
 }
 h1 {
   padding: 10px;
