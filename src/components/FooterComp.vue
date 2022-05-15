@@ -16,7 +16,7 @@
   border: solid 1px rgb(85, 50, 3);
   width: 100%;
   margin: 0;
-  height: 4em;
+  /* height: 4em; */
   line-height: 4;
 }
 ul {
