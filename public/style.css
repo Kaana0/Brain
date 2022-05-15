@@ -7,7 +7,7 @@ html {
   font-size: 1.4rem;
 }
 #app {
-  padding-top: 30px;
+  padding-top: 50px;
   height: 100vh;
   /* height: 100%; */
   background-color: rgb(173, 132, 102);
@@ -15,7 +15,7 @@ html {
 }
 #list {
   background-color: rgb(208, 182, 157);
-  min-height: 100vh;
+  height: 100vh;
 }
 #app1 {
   text-align: center;

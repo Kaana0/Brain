@@ -60,7 +60,7 @@ li {
 input {
   background-color: #FFF;
   border-style: inset;
-  height: 20px;
+  height: 25px;
   text-align: center;
 }
 h1 {

@@ -157,7 +157,7 @@ h1 {
 }
 #app2 {
   padding-top: 60px;
-  min-height: 100vh;
+  height: 100vh;
   background-color: rgb(173, 132, 102);
 }
 #cal-header span{
