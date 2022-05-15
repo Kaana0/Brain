@@ -103,9 +103,9 @@ header {
 }
 /*タブレット 〜 */
 @media (min-width: 768px) {
-  html {
+  /* html {
     font-size: 200.5%;
-  }
+  } */
   .food_list_li {
     height: 260px;
     line-height: 3;
@@ -124,8 +124,8 @@ header {
 /*PC大 〜 */
 @media (min-width: 1200px) {
   .food_list_li {
-    height: 280px; 
-    line-height: 3;
+    height: 150px; 
+    line-height: 2;
   }
   .todaypage {
     width: 19em;
