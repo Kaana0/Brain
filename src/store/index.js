@@ -17,7 +17,6 @@ state: {
         {name: "肉", isShow: false },
         {name: "乳製品", isShow: false },
         {name: "種", isShow: false },
-        // {name: "洗剤", isShow: false },
     ],
     vegetable: '',
     time: '',
@@ -235,7 +234,6 @@ mutations: {
     reNowDate(state, {nowDate}) {
         state.nowDate = nowDate
     },
-
     addClickDay(state, {day}) {
         state.clickDay = day
     },
@@ -339,7 +337,6 @@ actions: {
             let d = ('0' + date.getDate()).slice(-2)
             const today = y + '-' + m + '-' + d
             commit('addClickDay', { day: today})
-            // commit('addNewList')
         }
     },
     loadData2({ commit }) {

@@ -100,5 +100,8 @@ button {
 img {
   height: 40px;
 }
-
+svg {
+    fill: currentColor;
+    display: block;
+  }
 </style>

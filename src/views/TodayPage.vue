@@ -1,6 +1,6 @@
 <template>
   <div id="list">
-    <h1>{{ TodayPage }}日</h1>
+    <h1>{{ TodayPage }}</h1>
     <ul>
       <li class="todaypage" v-for="(item, index) in filteredFoodList.foodList" :key="index" @click="getStanp(item.name)">
         <img v-show="item.isShow" src="../assets/ok.svg" alt="">{{ item.name }}
@@ -54,11 +54,6 @@ export default {
     TodayPage() {
       return this.$store.state.clickDay
     },
-    // filterdToday() {
-    //   return this.Date.filter((day) => {
-    //   return day === this.TodayPage
-    //   })
-    // }
   },
   components: {
     FooterComp,
