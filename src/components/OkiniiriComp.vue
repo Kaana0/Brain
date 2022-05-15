@@ -1,5 +1,5 @@
 <template>
-  <div id="app1">
+  <div id="hosi">
     <button @click="hosiClick(dayNum)" :class="{'li': isToday(dayNum), active: day ===dayNum}"><img src="../assets/hosi.svg" alt=""></button>
     <span :class="{redText:checkDayNum(dayNum)}">{{dayNum}}</span>
 
@@ -90,7 +90,7 @@ export default {
 </script>
 
 <style scoped>
-#app1 {
+#hosi {
   text-align: end;
 }
 button {
@@ -100,8 +100,4 @@ button {
 img {
   height: 40px;
 }
-svg {
-    fill: currentColor;
-    display: block;
-  }
 </style>
