@@ -7,7 +7,8 @@
         <li v-for="(item, index) in foodSearch" :key="index">
           {{ item.name }}
           <br><img class="food" :src="require('@/assets/'+item.photo)">
-          <br>{{ `【効果】${item.kouka}` }}<br>{{ `【成分】${item.seibun}` }}
+          <p class="text__slideIn">{{ `【効果】${item.kouka}` }}</p>
+          <p class="text__slideIn">{{ `【成分】${item.seibun}` }}</p>
         </li>
       </ul>
     <img class="nou" src="../assets/brain2.svg" alt="脳" v-if="inputText == ''">
@@ -81,5 +82,19 @@ input {
 }
 h1 {
   padding: 10px;
+}
+.text__slideIn {
+  animation: slideIn 1.6s infinite;
+  animation-iteration-count: 1;
+}
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 </style>
