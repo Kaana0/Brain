@@ -8,7 +8,7 @@ html {
 }
 #app {
   padding-top: 30px;
-  min-height: 100vh;
+  height: 100vh;
   /* height: 100%; */
   background-color: rgb(173, 132, 102);
   position: relative;
