@@ -21,7 +21,7 @@ html {
   text-align: center;
   background-color: rgb(173, 132, 102);
   position: relative;
-  min-height: 100vh;
+  /* min-height: 100vh; */
 }
 li {
   list-style: none;

@@ -54,9 +54,9 @@ export default {
 
 <style scoped>
 li {
-  border-bottom: 1px solid rgb(48, 18, 18);
+  /* border-bottom: 1px solid rgb(48, 18, 18); */
   font-size: 2em;
-  height: 18.3%;
+  height: 17%;
   align-items: center;
 }
 a, img {
