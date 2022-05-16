@@ -82,6 +82,22 @@ header {
   0% {transform: translateY(0px);}
   100% {transform: translateY(-10px);}
 }
+.text__slideIn {
+  animation: slideIn 1.6s infinite;
+  animation-iteration-count: 1;
+  font-size: 40px;
+}
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 .food_txt {
   line-height: 2;
 }
@@ -120,15 +136,21 @@ header {
 }
 /*タブレット 〜 */
 @media (min-width: 768px) {
-  /* html {
-    font-size: 200.5%;
-  } */
   .food_list_li {
     height: 260px;
     line-height: 3;
   }  
   #app {
     padding-top: 10%;
+  }
+  .redText {
+    height: 70px;
+  }
+  tr {
+    height: 8rem;
+  }
+  thead {
+    height: 4rem;
   }
 }
 /*PC 〜 */
@@ -148,5 +170,6 @@ header {
     width: 19em;
     height: 20em;
   }
+  
 }
 

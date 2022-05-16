@@ -21,25 +21,11 @@ export default {
 }
 </script>
 <style scoped>
-.text__slideIn {
-  animation: slideIn 1.6s infinite;
-  animation-iteration-count: 1;
-  font-size: 40px;
-}
+
 p {
   animation: slideIn2 1.6s infinite;
   animation-iteration-count: 1;
   font-size: 20px;
-}
-@keyframes slideIn {
-  0% {
-    opacity: 0;
-    transform: translateX(100px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
 }
 @keyframes slideIn2 {
   0% {

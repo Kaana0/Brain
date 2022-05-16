@@ -1,6 +1,6 @@
 <template>
 <div id="app2">
-  <h1>Calender</h1>
+  <h1 class="text__slideIn">Calender</h1>
   <div id="calendar">
   <div id="cal-header">
     <span class="header-arrow" @click="setLastMonth()">＜</span>
@@ -134,15 +134,21 @@ export default {
 }
 </script>
 
-
 <style scoped>
-.redText {
-  color: red;
-  content: url(@/assets/yoku.svg);
+#calendar {
+  margin: 40px;
 }
-
+tr {
+  height: 7rem;
+}
+.redText {
+  content: url(@/assets/yoku.svg);
+  animation: key .5s ease infinite alternate;
+  animation-iteration-count: 3;
+}
 h1 {
   padding-bottom: 20px;
+  font-size: 40px;
 }
 #calendar {
   background-color: #fff;
