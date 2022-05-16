@@ -89,6 +89,7 @@ img {
   margin-top: 15%;
 }
 h1 {
+  padding-top: 100px;
   padding-bottom: 20px;
 }
 .routerlink {
