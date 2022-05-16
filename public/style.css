@@ -85,7 +85,7 @@ header {
 .text__slideIn {
   animation: slideIn 1.6s infinite;
   animation-iteration-count: 1;
-  font-size: 40px;
+  /* font-size: 40px; */
 }
 @keyframes slideIn {
   0% {
@@ -133,9 +133,9 @@ header {
     height: 260px;
     line-height: 6;
   }  
-  .text__slideIn {
-    
-  }
+  /* p {
+    font-size: 15px;
+  } */
 }
 /*タブレット 〜 */
 @media (min-width: 768px) {

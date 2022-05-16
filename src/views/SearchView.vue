@@ -61,6 +61,7 @@ li {
   height: 70px;
   animation: key .3s ease infinite alternate;
   font-size: 50px;
+  animation-iteration-count: 2;
 }
 @keyframes key {
   0% {transform: translateY(0px);}
