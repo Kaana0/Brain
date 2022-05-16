@@ -20,14 +20,6 @@ export default {
 }
 </script>
 <style scoped>
-.text__bound {
-  animation: key .3s ease infinite alternate;
-  font-size: 50px;
-}
-@keyframes key {
-  0% {transform: translateY(0px);}
-  100% {transform: translateY(-10px);}
-}
 img {
   height: 300px;
 }
