@@ -133,6 +133,9 @@ header {
     height: 260px;
     line-height: 6;
   }  
+  .text__slideIn {
+    
+  }
 }
 /*タブレット 〜 */
 @media (min-width: 768px) {
