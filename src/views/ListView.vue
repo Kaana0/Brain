@@ -56,7 +56,7 @@ export default {
 li {
   /* border-bottom: 1px solid rgb(48, 18, 18); */
   font-size: 2em;
-  height: 15%;
+  height: 20%;
   align-items: center;
 }
 a, img {
@@ -64,6 +64,9 @@ a, img {
 }
 ul {
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 76px;
 }
 .hirameki {
   margin-right: 10px;

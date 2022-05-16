@@ -30,6 +30,7 @@ a {
   text-decoration: none;
   color: rgb(70, 2, 2);
   display: block;
+  height: 100%;
 }
 img {
   max-width: 100%;
@@ -80,13 +81,17 @@ header {
 .food_list {
   display: flex;
   align-items: center;
+  height: 25%;
+  /* border: 1px solid rgb(84, 60, 60); */
+
 }
 .food_list_li {
   width: 50%;
-  border: 1px solid rgb(84, 60, 60);
+  height: 100%;
+  /* border: 1px solid rgb(84, 60, 60); */
   font-size: 17px;
   color: bisque;
-  height: 130px;
+  /* line-height: 2.5; */
 }
 .food_img {
   width: 100px;

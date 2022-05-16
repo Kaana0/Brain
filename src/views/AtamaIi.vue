@@ -12,7 +12,7 @@
       <li class="food_list_li"><router-link to="/potato">じゃがいも<br><img class="food_img" :src="require('@/assets/potato.svg')"></router-link></li>
       <li class="food_list_li"><router-link to="/satumaimo">さつまいも<br><img class="food_img" :src="require('@/assets/satumaimo.svg')"></router-link></li>
     </ul>
-    <ul class="food_list">
+    <ul class="food_list ul_last">
       <li class="food_list_li"><router-link to="/soramame">そらまめ<br><img class="food_img" :src="require('@/assets/soramame.svg')"></router-link></li>
       <li class="food_list_li"><router-link to="/wakame">わかめ<br><img class="food_img" :src="require('@/assets/wakame.svg')"></router-link></li>
     </ul>
@@ -31,3 +31,8 @@ export default {
   }
 }
 </script>
+<style scoped>
+.ul_last {
+  padding-bottom: 38px;
+}
+</style>
