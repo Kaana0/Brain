@@ -147,7 +147,7 @@ tr {
   animation-iteration-count: 3;
 }
 h1 {
-  padding-bottom: 20px;
+  padding-bottom: 10px;
   font-size: 40px;
 }
 #calendar {
