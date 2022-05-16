@@ -55,6 +55,7 @@ li {
   background-color: antiquewhite;
   line-height: 2;
   padding: 0 10px;
+  overflow: hidden;
 }
 .food {
   height: 70px;

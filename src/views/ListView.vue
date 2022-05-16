@@ -100,7 +100,7 @@ button:hover{
     bottom: 0;
     margin: auto;
     background-color: #f0dfd1;
-    border: 1px solid rgb(70, 2, 2);
+    border: 3px solid rgb(180, 152, 91);
     transition: background-color 2.2s;
     transition-duration: 3s;
     transition: 1.5s;
