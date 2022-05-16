@@ -66,13 +66,12 @@ header {
   width: 200px;
 }
 .food_ttl {
-  padding-top: 10px;
+  padding-top: 100px;
   color: rgb(92, 23, 23);
 
 }
 .food_txt {
   line-height: 2;
-  word-break: keep-all;
 }
 .txt_ttl {
   color: rgb(92, 23, 23);
