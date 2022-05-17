@@ -9,7 +9,6 @@
 export default {
   data() {
     return {
-    day:-1,
     today: '',
     }
   },
