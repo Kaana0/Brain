@@ -6,8 +6,13 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="icon" href="./nou.svg">
     <link rel="icon" href="./nou.svg" type="image/svg+xml">
-    <link rel="manifest" href="img/icons/manifest.json">
+    <link rel="manifest" href="manifest.json">
 
+    <!-- IOSでアイコンを表示されるために以下追加 -->
+    <link rel="manifest" href="manifest.webmanifest" />
+    <script async src="https://cdn.jsdelivr.net/npm/pwacompat@2.0.6/pwacompat.min.js"
+    integrity="sha384-GOaSLecPIMCJksN83HLuYf9FToOiQ2Df0+0ntv7ey8zjUHESXhthwvq9hXAZTifA"
+    crossorigin="anonymous"></script>
     <title>GreatBrain</title>
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
     <link rel="stylesheet" href="style.css">
