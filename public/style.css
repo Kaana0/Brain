@@ -2,7 +2,6 @@
 html {
   scroll-behavior: smooth;
   font-size: 62.5%;
-  z-index: 1;
 }
 * {
   font-size: 1.4rem;
@@ -12,21 +11,16 @@ html {
   height: 100vh;
   /* height: 100%; */
   background-color: rgb(173, 132, 102);
-  position: absolute;
-  z-index: 1;
-
+  position: relative;
 }
 #list {
   background-color: rgb(173, 132, 102);
   height: 100vh;
-  position: absolute;
-  z-index: 1;
 }
 #app1 {
   text-align: center;
   background-color: rgb(173, 132, 102);
   position: relative;
-  z-index: 1;
   /* min-height: 100vh; */
 }
 li {
@@ -62,7 +56,6 @@ header {
   justify-content: space-around;
   position: absolute;
   bottom: 0;
-  z-index: 100;
 }
 #food_page {
   background-color: rgb(173, 132, 102);
