@@ -57,6 +57,7 @@ header {
   position: absolute;
   bottom: 0;
   position: fixed;
+  margin: 0;
 }
 #food_page {
   background-color: rgb(173, 132, 102);
