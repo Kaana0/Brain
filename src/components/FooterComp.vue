@@ -39,7 +39,6 @@
     color: rgb(85, 50, 3);
     transition: 0.3s ease-in-out;
     box-shadow: 5px 5px 0 #903a38;
-    z-index: 100;
 }
 .button:hover {
   background-color: #c49494;

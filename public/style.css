@@ -2,6 +2,7 @@
 html {
   scroll-behavior: smooth;
   font-size: 62.5%;
+  z-index: 1;
 }
 * {
   font-size: 1.4rem;
@@ -56,6 +57,7 @@ header {
   justify-content: space-around;
   position: absolute;
   bottom: 0;
+  z-index: 100;
 }
 #food_page {
   background-color: rgb(173, 132, 102);
