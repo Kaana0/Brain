@@ -12,16 +12,21 @@ html {
   height: 100vh;
   /* height: 100%; */
   background-color: rgb(173, 132, 102);
-  position: relative;
+  position: absolute;
+  z-index: 1;
+
 }
 #list {
   background-color: rgb(173, 132, 102);
   height: 100vh;
+  position: absolute;
+  z-index: 1;
 }
 #app1 {
   text-align: center;
   background-color: rgb(173, 132, 102);
   position: relative;
+  z-index: 1;
   /* min-height: 100vh; */
 }
 li {
