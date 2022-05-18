@@ -1,11 +1,11 @@
 <template>
   <div id="list">
     <ul>
-      <li><router-link to="/atamaii"><img class="hirameki" src="../assets/denki.svg" alt=""><button id="foot"><button class="button-os">頭に良い</button></button></router-link></li>
-      <li><router-link to="/syuutyuu"><img class="hirameki" src="../assets/atama1.svg" alt=""><button id="foot"><button class="button-os">集中力Up</button></button></router-link></li>
-      <li><router-link to="/kiokuup"><img class="hirameki" src="../assets/atama2.svg" alt=""><button id="foot"><button class="button-os">記憶力Up</button></button></router-link></li>
-      <li><router-link to="/sikouup"><img class="hirameki" src="../assets/hirameki.svg" alt=""><button id="foot"><button class="button-os">思考力Up</button></button></router-link></li>
-      <li><router-link to="/noukassei"><img class="hirameki" src="../assets/atama3.svg" alt=""><button id="foot"><button class="button-os">脳の活性化</button></button></router-link></li>
+      <li><router-link to="/atamaii"><img class="hirameki" src="../assets/niko.svg" alt=""><button id="foot"><button class="button-os">頭に良い</button></button></router-link></li>
+      <li><router-link to="/syuutyuu"><img class="hirameki" src="../assets/niko1.svg" alt=""><button id="foot"><button class="button-os">集中力Up</button></button></router-link></li>
+      <li><router-link to="/kiokuup"><img class="hirameki" src="../assets/niko2.svg" alt=""><button id="foot"><button class="button-os">記憶力Up</button></button></router-link></li>
+      <li><router-link to="/sikouup"><img class="hirameki" src="../assets/niko3.svg" alt=""><button id="foot"><button class="button-os">思考力Up</button></button></router-link></li>
+      <li><router-link to="/noukassei"><img class="hirameki" src="../assets/niko4.svg" alt=""><button id="foot"><button class="button-os">脳の活性化</button></button></router-link></li>
     </ul>
     <body>
     <!-- <button id="foot"><button class="button-os"><a href="#">BUTTON</a></button></button> -->
@@ -66,7 +66,7 @@ ul {
 }
 
 button{
-  border-radius: 30px;
+  /* border-radius: 30px; */
   box-shadow: 0 0 8px rgb(207, 207, 207);
 }
 button:hover{
@@ -77,7 +77,6 @@ button:hover{
   } 
 #foot{
   position: relative;
-  top: 15px;
   left: 0;
   right: 0;
   bottom: 0;
