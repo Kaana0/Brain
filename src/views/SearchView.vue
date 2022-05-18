@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <DayComp></DayComp>
     <ClockComp></ClockComp>
     <h1 class="food">Search</h1>
       <input  type="text" v-model="inputText">
@@ -16,6 +17,7 @@
   </div>
 </template>
 <script>
+import DayComp from '@/components/DayComp.vue';
 import ClockComp from '@/components/ClockComp.vue';
 import FooterComp from '@/components/FooterComp.vue';
 export default {
@@ -39,6 +41,7 @@ export default {
 
   },
   components: {
+    DayComp,
     ClockComp,
     FooterComp,
   }
