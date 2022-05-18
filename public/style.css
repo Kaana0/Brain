@@ -56,6 +56,7 @@ header {
   justify-content: space-around;
   position: absolute;
   bottom: 0;
+  position: fixed;
 }
 #food_page {
   background-color: rgb(173, 132, 102);
