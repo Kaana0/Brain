@@ -6,7 +6,7 @@
         <img v-show="item.isShow" src="../assets/ok.svg" alt="">{{ item.name }}
       </li>
     </ul>
-    <p @click="set" class="routerlink">結果</p>
+    <p @click="set" class="todaypage result">結果</p>
     <FooterComp></FooterComp>
   </div>
 </template>
@@ -65,9 +65,9 @@ ul {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 20px;
   margin: auto;
-  padding: 0 20px;
+  padding: 20px 20px;
 }
 .todaypage {
   background-color: antiquewhite;
@@ -92,7 +92,7 @@ h1 {
   padding-top: 60px;
   padding-bottom: 20px;
 }
-.routerlink {
+/* .routerlink {
   background-color: bisque;
   border: 1px solid rgb(73, 15, 15);
   width: 100px;
@@ -101,7 +101,7 @@ h1 {
   border-radius: 30px;
   display: inline-block;
   font-size: 30px;
-}
+} */
 @media (min-width: 992px) {
   .todaypage {
     width: 10em;
@@ -114,5 +114,33 @@ h1 {
     line-height: 5;
   }
 }
+.todaypage {
+  align-items: center;
+  margin: 0 auto;
+  padding: 5px 20px;
+  color: rgba(17, 4, 4, 0.6);
+  font-size: 30px;
+  font-weight: 700;
+  background-color: antiquewhite;
+  box-shadow: 0 8px 0 #c49764;
+  transition: 0.3s;
+}
 
+.todaypage::after {
+  content: '';
+  width: 5px;
+  height: 5px;
+}
+
+.todaypage:hover {
+  transform: translateY(3px);
+  text-decoration: none;
+  box-shadow: 0 2px 0 #c49764;
+}
+.result {
+  border-radius: 70%;
+  width: 200px;
+  background-color: rgb(214, 165, 101);
+  box-shadow: 0 8px 0 #9b5d17;
+}
 </style>
