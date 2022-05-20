@@ -56,9 +56,9 @@ ul {
 }
 li {
   background-color: antiquewhite;
-  line-height: 2;
   padding: 0 10px;
   overflow: hidden;
+  font-size: 15px;
 }
 .food {
   height: 70px;

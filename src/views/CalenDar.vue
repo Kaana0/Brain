@@ -139,7 +139,8 @@ export default {
   margin: 40px;
 }
 tr {
-  height: 7rem;
+  height: 6rem;
+  font-size: 20px;
 }
 .redText {
   content: url(@/assets/yoku.svg);
@@ -162,7 +163,7 @@ h1 {
   justify-content: space-between;
 }
 #app2 {
-  padding-top: 60px;
+  padding-top: 30px;
   height: 100vh;
   background-color: rgb(173, 132, 102);
 }

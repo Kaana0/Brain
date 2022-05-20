@@ -65,42 +65,42 @@ ul {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 40px;
+  gap: 30px;
   margin: auto;
   padding: 0 20px;
 }
 .todaypage {
   background-color: antiquewhite;
   border: 1px solid rgb(73, 15, 15);
-  width: 6em;
-  height: 3em;
-  line-height: 3;
+  width: 150px;
+  height: 50px;
   z-index: 1;
   position: relative;
+  font-size: 30px;
 }
 img {
   z-index: 0;
   position: absolute;
   top: -1.5em;
   left: 0;
-  width: 8em;
+  width: 200px;
 }
 #app {
   margin-top: 15%;
 }
 h1 {
-  padding-top: 100px;
+  padding-top: 50px;
   padding-bottom: 20px;
 }
 .routerlink {
   background-color: bisque;
   border: 1px solid rgb(73, 15, 15);
-  width: 5em;
-  height: 3em;
-  line-height: 3;
+  width: 100px;
+  height: 50px;
   margin-top: 20px;
   border-radius: 30px;
   display: inline-block;
+  font-size: 30px;
 }
 @media (min-width: 992px) {
   .todaypage {

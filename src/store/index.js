@@ -16,7 +16,7 @@ state: {
         {name: "魚", isShow: false },
         {name: "肉", isShow: false },
         {name: "乳製品", isShow: false },
-        {name: "種", isShow: false },
+        // {name: "種", isShow: false },
     ],
     vegetable: '',
     time: '',

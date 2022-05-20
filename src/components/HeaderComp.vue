@@ -26,7 +26,7 @@
 .li {
   display: flex;
   justify-content: flex-end;
-  /* padding-right: 7%; */
   width: 100px;
+  font-size: 20px;
 }
 </style>
