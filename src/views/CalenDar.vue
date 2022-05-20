@@ -163,7 +163,7 @@ h1 {
   justify-content: space-between;
 }
 #app2 {
-  padding-top: 30px;
+  padding-top: 40px;
   height: 100vh;
   background-color: rgb(173, 132, 102);
 }

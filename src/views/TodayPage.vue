@@ -73,7 +73,7 @@ ul {
   background-color: antiquewhite;
   border: 1px solid rgb(73, 15, 15);
   width: 150px;
-  height: 50px;
+  height: 60px;
   z-index: 1;
   position: relative;
   font-size: 30px;
@@ -89,7 +89,7 @@ img {
   margin-top: 15%;
 }
 h1 {
-  padding-top: 50px;
+  padding-top: 60px;
   padding-bottom: 20px;
 }
 .routerlink {
