@@ -73,9 +73,11 @@ p {
 }
 h1 {
   padding: 10px;
+  font-size: 40px;
 }
 h3 {
   padding-bottom: 10px;
+  font-size: 30px;
 }
 p {
   line-height: 2.5;
