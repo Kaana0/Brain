@@ -53,7 +53,7 @@ export default {
   width: 100%;
 }
 .setumei {
-  font-size: 5px;
+  font-size: 15px;
   color: #FFF;
 }
 p {
