@@ -42,15 +42,15 @@ export default {
 }
 </script>
 <style scoped>
-.hide {
-  /* background-color: rgba(red, green, rgb(231, 231, 241), alpha); */
-}
 .nav {
   display: flex;
   position: fixed;
   bottom: 0;
   z-index: 1;
   padding-bottom: 50px;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 100%;
 }
 .setumei {
   font-size: 5px;
