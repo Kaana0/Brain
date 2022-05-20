@@ -7,6 +7,7 @@
       <p>普段食べているものが<br>どんな成分かを知って、<br>頭に良い食事をしましょう。</p>
       <p>記憶力、集中力、<br>脳に良い食べ物を取り入れて<br><span class="span">Happy</span>な日々になりますように。</p>
       </div><!-- /.about -->
+      
       <div class="nav">
       <div class="hide" @click="isHide = true" v-show="!isHide">
       <p class="setumei">食材を<br>入力できるよ!</p>
@@ -45,9 +46,8 @@ export default {
 .nav {
   display: flex;
   position: fixed;
-  bottom: 5;
+  bottom: 5%;
   z-index: 1;
-  /* padding-bottom: 50px; */
   justify-content: space-between;
   margin: 0 auto;
   width: 100%;
