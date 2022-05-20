@@ -45,7 +45,7 @@ export default {
 .nav {
   display: flex;
   position: fixed;
-  bottom: 70;
+  bottom: 30;
   z-index: 1;
   /* padding-bottom: 50px; */
   justify-content: space-between;
