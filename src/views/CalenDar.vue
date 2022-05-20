@@ -161,6 +161,7 @@ h1 {
   border-bottom: 1px solid rgb(8, 8, 8);
   display:flex;
   justify-content: space-between;
+  font-size: 20px;
 }
 #app2 {
   padding-top: 40px;

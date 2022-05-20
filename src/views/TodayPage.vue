@@ -67,7 +67,7 @@ ul {
   flex-wrap: wrap;
   gap: 20px;
   margin: auto;
-  padding: 20px 20px;
+  padding: 30px 20px;
 }
 .todaypage {
   background-color: antiquewhite;
