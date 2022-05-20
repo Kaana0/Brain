@@ -62,7 +62,6 @@ header {
 #food_page {
   background-color: rgb(173, 132, 102);
   min-height: 100vh;
-  font-size: 20px;
 }
 .food_img {
   animation: key .3s ease infinite alternate;
@@ -102,10 +101,13 @@ header {
 
 .food_txt {
   line-height: 2;
+  font-size: 20px;
+
 }
 .txt_ttl {
   color: rgb(92, 23, 23);
   padding-bottom: 10px;
+  font-size: 20px;
 }
 .food_list {
   display: flex;
