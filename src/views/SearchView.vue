@@ -81,9 +81,9 @@ li {
 input {
   background-color: #FFF;
   border-style: inset;
-  height: 25px;
   text-align: center;
   margin-top: 30px;
+  font-size: 20px;
 }
 h1 {
   padding: 10px;

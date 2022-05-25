@@ -9,15 +9,15 @@
       </div><!-- /.about -->
       
       <div class="nav">
-      <div class="hide" @click="isHide = true" v-show="!isHide">
-      <p class="setumei">食材を<br>入力できるよ!</p>
+      <div @click="isHide = !isHide" v-bind:class="hide">
+      <p  class="setumei">食材を<br>入力できるよ!</p>
       <img src="../assets/yubi1.svg" alt="">
       </div>
-      <div class="hide"  @click="isHide1 = true" v-show="!isHide1">
+      <div @click="isHide1 = !isHide1" v-bind:class="hide1">
       <p class="setumei">項目別に<br>なってるよ！</p>
       <img src="../assets/yubi1.svg" alt="">
       </div>
-      <div class="hide" @click="isHide2 = true" v-show="!isHide2">
+      <div class="hide" @click="isHide2 = !isHide2" v-bind:class="hide2">
       <p class="setumei">その日食べた物を<br>押してね！</p>
       <img src="../assets/yubi1.svg" alt="">
       </div>
@@ -31,9 +31,29 @@ import FooterComp from '@/components/FooterComp.vue';
 export default {
   data() {
     return {
-      isHide: false,
-      isHide1: false,
-      isHide2: false
+      isHide: true,
+      isHide1: true,
+      isHide2: true
+    }
+  },
+  computed: {
+    hide() {
+      return {
+        red:this.isHide,
+        yellow: !this.isHide
+      }
+    },
+    hide1() {
+      return {
+        red:this.isHide1,
+        yellow: !this.isHide1
+      }
+    },
+    hide2() {
+      return {
+        red:this.isHide2,
+        yellow: !this.isHide2
+      }
     }
   },
   components: {
@@ -43,6 +63,12 @@ export default {
 }
 </script>
 <style scoped>
+.red {
+  opacity: 1;
+}
+.yellow {
+  opacity: 0;
+}
 .nav {
   display: flex;
   position: fixed;
