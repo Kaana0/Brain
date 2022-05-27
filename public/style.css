@@ -214,10 +214,6 @@ header {
 .food_list_li {
   width: auto;
 }
-tr {
-  height: auto;
-  font-size: 10px;
-}
 #app2 {
   padding-top: 20px;
 }
