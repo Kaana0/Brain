@@ -146,44 +146,56 @@ header {
     height: 6rem;
     font-size: 20px;
   }  
+  #app1 {
+    min-height: 100vh;
+  }
 }
 /*タブレット 〜 */
 @media (min-width: 768px) {
-  .food_list_li {
+  /* .food_list_li {
     height: 260px;
     line-height: 3;
-  }  
+  }   */
   #app {
     padding-top: 10%;
   }
   .redText {
     height: 70px;
   }
+  thead {
+    height: 4rem;
+  }
   tr {
     height: 8rem;
     font-size: 20px;
   }
-  thead {
-    height: 4rem;
-  }
 }
 /*PC 〜 */
 @media (min-width: 992px) {
-  .food_list_li {
+  /* .food_list_li {
     height: 260px;
-    line-height: 3;
+    line-height: 3; */
   }  
-}
+  tr {
+    height: 8rem;
+    font-size: 20px;
+  }
+
 /*PC大 〜 */
 @media (min-width: 1200px) {
-  .food_list_li {
+  /* .food_list_li {
     height: 150px; 
     line-height: 2;
-  }
+  } */
   .todaypage {
     width: 19em;
     height: 20em;
   }
+  tr {
+    height: 8rem;
+    font-size: 20px;
+  }
+  
 }
 @media (orientation: landscape){
 .box {
@@ -208,10 +220,10 @@ header {
 .food_list_li {
   width: auto;
 }
-tr {
+/* tr {
   height: auto;
   font-size: 10px;
-}
+} */
 #app2 {
   padding-top: 20px;
 }
@@ -221,8 +233,8 @@ tr {
 .result {
   width: 200px;
 }
-.redText {
+/* .redText {
   width: 10px;
-}
+} */
 }
 
