@@ -1,6 +1,5 @@
 <template>
   <div id="food_page">
-    <OkiniiriComp></OkiniiriComp>
     <h1 class="food_ttl">{{ $store.state.fd[3].name }}</h1>
     <h1><img class="food_img" :src="require('@/assets/buta.svg')"></h1>
     <h2 class="txt_ttl">【効果】</h2>

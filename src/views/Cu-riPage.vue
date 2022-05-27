@@ -1,6 +1,5 @@
 <template>
   <div id="food_page">
-    <OkiniiriComp></OkiniiriComp>
       <ul>
         <li v-for="(item, index) in foodSearch" :key="index">
           <h1 class="food_ttl">{{ item.name }}</h1>

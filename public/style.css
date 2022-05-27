@@ -128,7 +128,12 @@ header {
 .food_img {
   width: 100px;
 }
-
+@media (min-width: 400px) {
+  tr {
+    height: 6rem;
+    font-size: 20px;
+  }
+}
 @media (min-width: 576px) {
   #app, #food_page, #app {
     padding-top: 10%;
@@ -137,9 +142,10 @@ header {
     height: 260px;
     line-height: 6;
   }  
-  /* p {
-    font-size: 15px;
-  } */
+  tr {
+    height: 6rem;
+    font-size: 20px;
+  }  
 }
 /*タブレット 〜 */
 @media (min-width: 768px) {
@@ -155,6 +161,7 @@ header {
   }
   tr {
     height: 8rem;
+    font-size: 20px;
   }
   thead {
     height: 4rem;
@@ -177,6 +184,45 @@ header {
     width: 19em;
     height: 20em;
   }
-  
+}
+@media (orientation: landscape){
+.box {
+  display: flex;
+  justify-content: center;
+}
+.box_in1 {
+  padding-right: 60px;
+}
+#app {
+  padding-top: 30px;
+}
+/* #app1 {
+  min-height: 100vh;
+} */
+.nou {
+  width: 300px;
+}
+#list {
+  height: auto;
+}
+.food_list_li {
+  width: auto;
+}
+tr {
+  height: auto;
+  font-size: 10px;
+}
+#app2 {
+  padding-top: 20px;
+}
+.mediayoko {
+  gap: 0;
+}
+.result {
+  width: 200px;
+}
+.redText {
+  width: 10px;
+}
 }
 

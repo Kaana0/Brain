@@ -1,12 +1,14 @@
 <template>
   <div id="list">
     <h1>{{ TodayPage }}</h1>
-    <ul>
+
+    <ul  class="mediayoko">
       <li class="todaypage" v-for="(item, index) in filteredFoodList.foodList" :key="index" @click="getStanp(item.name)">
         <img v-show="item.isShow" src="../assets/ok.svg" alt="">{{ item.name }}
       </li>
     </ul>
     <p @click="set" class="todaypage result">結果</p>
+
     <FooterComp></FooterComp>
   </div>
 </template>

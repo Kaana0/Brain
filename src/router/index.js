@@ -36,11 +36,6 @@ const routes = [
     component: () => import('../views/ResultView.vue')
   },
   {
-    path: '/okiniiri',
-    name: 'okiniiri',
-    component: () => import('../views/OkiniiRi.vue')
-  },
-  {
     path: '/todaypage',
     name: 'today',
     component: () => import('../views/TodayPage.vue')

@@ -2,10 +2,22 @@
   <div id="app">
       <div class="about">
       <ClockComp></ClockComp>
-      <h1 class="text__slideIn">How to Use...</h1>
-      <h3 class="text__slideIn">Great Brainを<br>手に入れよう！</h3>
-      <p>普段食べているものが<br>どんな成分かを知って、<br>頭に良い食事をしましょう。</p>
-      <p>記憶力、集中力、<br>脳に良い食べ物を取り入れて<br><span class="span">Happy</span>な日々になりますように。</p>
+
+      <div class="box">
+
+        <div class="box_in1">
+          <h1 class="text__slideIn">How to Use...</h1>
+          <h3 class="text__slideIn">Great Brainを<br>手に入れよう！</h3>
+        </div>
+      
+
+      <div class="box_in2">
+        <p>普段食べているものが<br>どんな成分かを知って、<br>頭に良い食事をしましょう。</p>
+        <p>記憶力、集中力、<br>脳に良い食べ物を取り入れて<br><span class="span">Happy</span>な日々になりますように。</p>
+      </div>
+      
+      </div>
+
       </div><!-- /.about -->
       
       <div class="nav">

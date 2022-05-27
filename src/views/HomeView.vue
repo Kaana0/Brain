@@ -1,11 +1,17 @@
 <template>
   <div id="app">
     <HeaderComp></HeaderComp>
-    <h1 class="text__bound">Great</h1>
-    <h1 class="text__bound">Brain !!</h1>
-  <router-link to="/about" class="li">
-  <img class="text__bound" src="../../public/nou.svg" alt="">
-  </router-link>
+    <div class="box">
+      <div class="box_in1">
+      <h1 class="text__bound">Great</h1>
+      <h1 class="text__bound">Brain !!</h1>
+      </div>
+      <div class="box_in">
+      <router-link to="/about" class="li">
+      <img class="text__bound" src="../../public/nou.svg" alt="">
+      </router-link>
+      </div>
+    </div>
   </div>
 </template>
 

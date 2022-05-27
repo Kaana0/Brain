@@ -1,6 +1,6 @@
 <template>
 <div id="app2">
-  <h1 class="text__slideIn">Calender</h1>
+  <h1 class="text__slideIn">Calendar</h1>
   <div id="calendar">
   <div id="cal-header">
     <span class="header-arrow" @click="setLastMonth()">＜</span>
@@ -137,10 +137,6 @@ export default {
 <style scoped>
 #calendar {
   margin: 40px;
-}
-tr {
-  height: 6rem;
-  font-size: 20px;
 }
 .redText {
   content: url(@/assets/yoku.svg);
