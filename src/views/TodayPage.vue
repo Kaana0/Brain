@@ -85,7 +85,7 @@ img {
   position: absolute;
   top: -1.5em;
   left: 0;
-  width: 200px;
+  width: 250px;
 }
 #app {
   margin-top: 15%;
@@ -94,16 +94,6 @@ h1 {
   padding-top: 60px;
   padding-bottom: 20px;
 }
-/* .routerlink {
-  background-color: bisque;
-  border: 1px solid rgb(73, 15, 15);
-  width: 100px;
-  height: 50px;
-  margin-top: 20px;
-  border-radius: 30px;
-  display: inline-block;
-  font-size: 30px;
-} */
 @media (min-width: 992px) {
   .todaypage {
     width: 10em;
