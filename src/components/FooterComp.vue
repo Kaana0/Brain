@@ -34,7 +34,7 @@
     align-items: center;
     margin: 0 auto;
     max-width: 220px;
-    padding: 10px 0px;
+    padding: 15px 0px;
     color: rgb(85, 50, 3);
     transition: 0.3s ease-in-out;
     box-shadow: 5px 5px 0 #903a38;
