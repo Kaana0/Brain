@@ -187,7 +187,7 @@ h1 {
   color: rgb(3, 3, 3);
 }
 #cal-main td {
-  padding: 8px;
+  /* padding: 8px; */
   text-align: center;
   vertical-align: middle;
   border-top: 1px solid rgb(3, 3, 3);

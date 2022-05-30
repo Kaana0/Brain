@@ -84,7 +84,7 @@ export default {
 .nav {
   display: flex;
   position: fixed;
-  bottom: 5%;
+  bottom: 12%;
   z-index: 1;
   justify-content: space-around;
   margin: 0 auto;

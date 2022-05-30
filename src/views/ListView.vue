@@ -110,7 +110,7 @@ button:hover{
     background-color: #d8a18b;
   }
   .button-os {
-    font-size: 15px;
+    font-size: 25px;
     display: block;
     transition: 1.5s;
     color: rgb(70, 2, 2);
@@ -133,5 +133,4 @@ img {
     transform: translateX(0);
   }
 }
-
 </style>
