@@ -12,8 +12,8 @@
       
 
       <div class="box_in2">
-        <p>普段食べているものが<br>どんな成分かを知って、<br>頭に良い食事をしましょう。</p>
-        <p>記憶力、集中力、<br>脳に良い食べ物を取り入れて<br><span class="span">Happy</span>な日々になりますように。</p>
+        <p>普段食べているものが<br>どんな成分かを知って、<br>頭に良い食事をしよう。</p>
+        <p>記憶力、集中力、<br>脳に良い食べ物を取り入れて<br><router-link to="/"><span class="span">Happy</span></router-link>な日々になりますように。</p>
       </div>
       
       </div>
@@ -86,7 +86,7 @@ export default {
   position: fixed;
   bottom: 5%;
   z-index: 1;
-  justify-content: space-between;
+  justify-content: space-around;
   margin: 0 auto;
   width: 100%;
 }

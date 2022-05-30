@@ -183,10 +183,7 @@ header {
 
 /*PC大 〜 */
 @media (min-width: 1200px) {
-  /* .food_list_li {
-    height: 150px; 
-    line-height: 2;
-  } */
+
   .todaypage {
     width: 19em;
     height: 20em;
@@ -198,22 +195,22 @@ header {
   
 }
 @media (orientation: landscape){
-.box {
+/* .box {
   display: flex;
   justify-content: center;
-}
+} */
 .box_in1 {
   padding-right: 60px;
 }
-#app {
+/* #app {
   padding-top: 30px;
-}
+} */
 .nou {
   width: 300px;
 }
-.food_list_li {
+/* .food_list_li {
   width: auto;
-}
+} */
 #app2 {
   padding-top: 20px;
 }
